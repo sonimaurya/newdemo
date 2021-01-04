@@ -1,0 +1,67 @@
+
+@mixin text-property($text-transform:uppercase,$size:14px,$color:#ffffff,$font:initial) {
+   text-transform: $text-transform;
+  font-size: $size;
+  color:$color ;
+  font-family:$font;
+}
+
+@mixin headingLine($background:$text-button-color) {
+   display: block;
+   width: 45px;
+   height: 3px;
+   background: $background;
+   margin: 20px auto;
+   
+}
+
+@mixin textButton($width:16%,$height:58px,$background:$text-button-color) {
+   background:$background;
+   font-family: Barlow-bold;
+   width: $width;
+   color: $secondary-text-color;
+   outline: none;
+   border: none;
+   align-self: center;
+   height: $height;
+   font-size: 20px;
+   border-radius: 30px;
+}
+
+
+
+
+
+@mixin slideshoe_dot {
+   background-color: $text-button-color;
+   height: 17px;
+   width: 17px;
+}
+
+
+@mixin  services2-box($padding:10%,$margin:5%) {
+   padding:$padding;
+   margin:$margin;
+   border:1px solid grey;
+   border-radius: 8px;
+   &-text{
+       @include text-property($font:Barlow-medium-bold,$color:$top-heading-color
+          ,$size:24px); 
+          text-align: center;
+   }
+}
+
+
+@mixin scroll-btn($top:89%,$right:4%) {
+      position: absolute;
+      top:$top;
+      right:$right;
+      cursor: pointer;
+
+}
+
+@mixin bullet {
+   display: list-item;     
+   list-style-type: disc; 
+   list-style-position: inside;
+}

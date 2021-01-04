@@ -1,0 +1,24 @@
+.header{
+    background-image: url(../images/about-us/aboutus_bg.jpg);
+    background-size: 100% 100%;
+    padding-bottom:0;
+    &-text{
+        padding-top:8%;
+        padding-left:10%;
+        padding-right:10%;
+        //padding:8% 22% 0 22%;
+        letter-spacing: 2px;
+        &-big-title{
+            padding-top: 9%;
+        }
+        &-small-title{
+        font-size: 20px;
+        text-transform: none;
+        font-family:Barlow-regular;
+        }
+        &-middle-title{
+            @include text-property($font:Barlow-bold,$size:24px);
+            padding:2%;
+        }
+    }
+}

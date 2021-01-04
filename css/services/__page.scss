@@ -1,0 +1,203 @@
+&-page{
+    width:84%;
+    &-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .wrapper-text{
+            text-align: center;
+            padding:4% 2%;
+            p{
+             @include text-property($text-transform:none,$font:barlow-regular,
+             $size:20px,$color:$top-heading-color);
+            }
+        }
+        .wrapper-unique-feature{
+             padding:2%;
+             &-box{
+              border:1px solid $services1-border-color;
+              padding:2% 4%;
+              &-heading{
+                  @include text-property($text-transform:none,
+                  $font:barlow-semi-bold,$size:20px,
+                  $color:$primary-text-color);
+                  margin: -3% 4% 0 4%;
+                  background:$secondary-text-color;
+                  width: 16%;
+                  text-align: center;
+                  letter-spacing:1.2px;
+              
+              }
+              &-text-points{
+                  @include text-property($text-transform:none,$font:barlow-regular,$size:20px,
+             $color:$top-heading-color);
+             ul{
+                 padding:2%;
+                 li{
+                  letter-spacing: 1.2px;
+                  line-height: 2;
+                 }
+             }
+              }
+             }
+        }
+        .wrapper-pavement-management{
+            display: flex;
+            justify-content: space-between;
+            padding:2%;
+            &-l{
+                width:30%;
+                padding:3%;
+                &-year{
+                    &-title{
+                      border-bottom: 1px dashed black;
+                      padding: 0 0 4% 0;
+                      @include text-property($text-transform:none,$font:Barlow-bold,
+                      $color:$primary-text-color,$size:18px);
+                      margin-right:15%;
+                    }
+                    &-radio{
+                      padding: 10% 5%;
+                        ul{
+                            list-style-type: none;
+                            li{
+                              padding: 2% 0;
+                                @include text-property($font:'Barlow-semi-bold'
+                                ,$text-transform:none,$color:$menu-text-color);
+                                
+                                input{
+                                    margin-right: 6%;
+                                    width: 15px;
+                                    
+                                }
+                               
+                            }
+                        }
+                    }
+                }
+                &-rating{
+                    &-title{
+                      border-bottom: 1px dashed black;
+                      padding: 0 0 4% 0;
+                      @include text-property($text-transform:none,$font:Barlow-bold,
+                      $color:$primary-text-color,$size:18px);
+                      margin-right:15%;
+                    }
+                    &-checkbox{
+                      ul{
+                          list-style-type: none;
+                          padding:2%;
+                          li{
+                              @include text-property($font:'Barlow-semi-bold'
+                              ,$text-transform:none,$color:$menu-text-color);
+                              margin-top:-3%;
+                              input{
+                                  margin-right: 10%;
+                                  width: 15px;
+                                  margin-bottom: 0;
+                                  
+                              }
+                              .good ~span{
+                                  color:#03ae50;
+                                  font-size:26px;
+                                  padding-right:2%;
+                              }
+                              .fair ~span{
+                                  color:#ffc001;
+                                  font-size:26px;
+                                  padding-right:2%;
+                              }
+                              .poor ~span{
+                                  color:#ed7d31;
+                                  font-size:26px;
+                                  padding-right:2%;
+                              }
+                              .very-poor ~span{
+                                  color:#fe0000;
+                                  font-size:26px;
+                                  padding-right:2%;
+                              }
+                              .n-a ~span{
+                                  color:#7f7f7f;
+                                  font-size:26px;
+                                  padding-right:2%;
+                              }
+                             
+                          }
+                      }
+                    }
+                }
+            }
+            
+            &-r{
+                img{
+                    width: 100%;
+                }
+              width:70%;
+              &-heading{
+                  @include text-property($text-transform:capitalize,
+                  $font:Barlow-bold,$size:40px,
+                  $color:$top-heading-color);
+                  text-align: center;
+                  padding: 2%;
+                  max-width: 100%;
+              }
+          }
+        }
+        .wrapper-values{
+            padding:4% 4%;
+            &-b{
+              border:1px solid $services1-border-color;
+              //padding:2% 4%;
+              &-h{
+              @include text-property($text-transform:none,
+              $font:barlow-semi-bold,$size:20px,
+              $color:$primary-text-color);
+              margin: -1% 3% 0 3%;
+              background:$secondary-text-color;
+              width: 16%;
+              text-align: center;
+              letter-spacing:1.2px;
+              }
+              &-t{
+                display: flex;
+                justify-content: space-between;
+                  padding:4% 0 0 0;
+                  &-cards{
+                      padding: 2% 4%;
+                      width:33.33%;
+                      text-align: center;
+                      &-icon{
+                          padding:2%;
+                      }
+                      &-heading{
+                          @include text-property($text-transform:capitalize,
+                          $font:barlow-semi-bold,$size:24px,
+                          $color:$primary-text-color);
+                          padding:2% 6%;
+                      }
+                      &-desc{
+                          @include text-property($text-transform:none,
+                          $font:barlow-regular,$size:20px,
+                          $color:$primary-text-color);
+                          padding:2% 0;
+                          line-height:2;
+                          letter-spacing:1.5px;
+                      }
+                  }
+              }
+            }
+            &-footer{
+              padding: 4%;
+              font-size: 40px;
+              letter-spacing: 1.5px;
+              font-family: 'Barlow-semi-bold';
+              text-align: center;
+              color:$top-heading-color;
+            }
+        }
+    }
+    .footer{
+      border-top: 1px solid $services1-border-color;
+    }
+  }

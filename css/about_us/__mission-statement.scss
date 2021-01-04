@@ -1,0 +1,39 @@
+.mission-statements{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $mission-statements-background;
+    &-title{
+        text-align: center;
+        padding: 2% 0 0 0;
+        .top-heading{
+            @include text-property($size:35px,$color:$primary-text-color
+            ,$font:Barlow-bold);
+        }
+        .horizontal-line{
+           @include headingLine;
+           background:$mission-statements-border;
+        }
+    }
+    &-para{
+        display: flex;
+        justify-content: space-between;
+        //padding:0 4% 4% 4%;
+        padding:3% 4%;
+        &-cards{
+            width:33.33%;
+            //padding: 3% 4% 0 4%;
+            padding-left:4%;
+            padding-right:4%;
+            text-align: center;
+            &-text{
+                @include text-property($text-transform:none,$size:20px,$font:'Barlow-regular');
+
+            }
+            &:nth-child(2){
+                border-right: 1px solid $mission-statements-border;
+                border-left: 1px solid $mission-statements-border;
+            }
+        }
+    }
+}

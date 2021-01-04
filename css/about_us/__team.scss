@@ -1,0 +1,67 @@
+.team{
+    display: flex;
+    justify-content:center;
+    padding:2% 5%;
+    background-image: url(../images/about-us/team_bg.jpg);
+    background-size: 100% 100%;
+    &-text{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &-title{
+            .top-heading{
+                @include text-property($size:35px,$color:$primary-text-color
+                ,$font:Barlow-bold);
+            }
+            .horizontal-line{
+               @include headingLine;
+               margin:20px 0;
+            }
+        }
+        &-para{
+            p{
+             @include text-property($text-transform:none,$size:20px,
+             $color:$primary-text-color,$font:'Barlow-medium-bold'
+             );
+            }
+            .team-sign-text{
+                padding-top:8%;
+            }
+         }
+    }
+   
+    &-images{
+        width:50%;
+        display: flex;
+        justify-content: center;
+        &-body{
+            padding: 5%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            &-image{
+                border-radius: 5px;
+                border:5px solid $text-button-color;
+               // height: 80%;
+               width: 100%;
+            }
+            .team-images-t{
+                display: flex;
+                padding:4%;
+                justify-content: space-between;
+            .team-images-text{
+                padding: 2%;
+                text-align: center;
+                &-title{
+                    @include text-property($text-transform:none,$size:20px,$color:$primary-text-color,$font:Barlow-medium-bold);
+                }
+                &-subtitle{
+                    @include text-property($text-transform:none,$size:16px,$color:$about-us-subtitle-color,$font:Barlow-medium-bold);
+                }
+            }
+        }
+            
+        }
+    }
+}

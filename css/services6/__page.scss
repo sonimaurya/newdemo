@@ -1,0 +1,35 @@
+
+    &-page{
+        display: flex;
+        flex-direction: column;
+        .services6-content{
+            display: flex;
+        flex-direction: column;
+        &-text{
+            @include text-property($text-transform:none,$size:20px,
+            $font:barlow-regular,$color:$top-heading-color);
+            padding:5%; 
+            letter-spacing: 1.3px;
+            p{
+                line-height: 2;
+                text-align: center;
+                letter-spacing: 1.3px;
+            }
+        }
+        &-images{
+            display: flex;
+        flex-direction: row;
+        padding: 0 15%;
+        .services6-image{
+          padding:2%;
+          width:50%;
+        }
+        img{
+            width: 80%;
+            border-radius:14px;
+            border:3px solid $text-button-color;
+        }
+        }
+     @import '../__feature';
+        }
+    }

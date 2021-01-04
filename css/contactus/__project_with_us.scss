@@ -1,0 +1,46 @@
+.project-with-us{
+    position: relative;
+    background-color: #5d5f5d;
+    display: flex;
+    flex-direction:column;
+    padding:4%;
+    &-title{
+        text-align: left;
+    .top-heading{
+        @include text-property($size:50px,$color:$secondary-text-color
+        ,$font:Barlow-medium-bold);
+    }
+    .horizontal-line{
+       @include headingLine;
+       margin-top: 20px;
+    }
+    }
+    &-para{
+        display: flex;
+        justify-content:space-between;
+        .para-text{
+            width: 50%;
+            margin-top:2%;
+            @include text-property($size:14px
+        ,$font:Barlow-regular);
+        letter-spacing:2.5px;
+        line-height: 2;
+        }
+        .number-button{
+            width: 50%;
+            display: flex;
+            justify-content:flex-end;
+            .project-with-us-button{
+                margin-top:2%;
+                @include textButton($background:$text-button-color,$width:30%);
+                border:1px solid $text-button-color;
+                height: 46px;
+                font-family:Barlow-medium-bold;
+                font-size:18px;
+            }
+        }
+    }
+    .scroll-btn{
+        @include scroll-btn($top:83%);
+    }
+}

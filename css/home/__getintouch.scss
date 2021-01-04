@@ -1,0 +1,58 @@
+.wrapper{
+    display:flex;
+    flex-direction: column;  
+    &__getintouch{
+        position: relative;
+        background-image: url(../images/home/getintouch.jpg);
+        background-size: 100% 100%;
+        &__heading{
+            padding-top: 30px;
+            text-align: center;
+            &__top{
+                @include text-property($size:40px,$color:$text-button-color
+                ,$font:Barlow-semi-bold);
+            }
+            &__line{
+               @include headingLine($background:$secondary-text-color);
+            }
+
+        }
+       
+        &__para{
+            text-align: center;
+            &__text{
+            @include text-property($size:18px,$text-transform:unset,
+            $font:Barlow-regular);
+            line-height: 2;
+                      }
+            width: 100%;
+            //margin:0 20% 0 20%;
+            &__contact_us{
+                display: flex;
+                justify-content:center;
+                &__address{
+                   padding:3% 5%;
+                    &__icon{
+                        padding:20px;
+                    }
+                    &__text{
+                        text-align: center;
+                        @include text-property($size:18px,$text-transform:unset,
+                        $font:Barlow-regular);
+                        line-height: 2;
+                    }
+                }
+               
+                
+            }
+            &__text_button{
+                margin:40px;
+             @include textButton($width:16%);
+            //  border:2px solid $secondary-text-color;
+            }
+        }
+        &__scroll_button{
+        @include scroll-btn;
+        }
+    }
+}

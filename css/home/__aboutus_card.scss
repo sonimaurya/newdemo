@@ -1,0 +1,24 @@
+   
+       &-card{
+          width: 33.3%;
+          flex-wrap: wrap;
+          padding: 40px;
+          text-align:center;
+          &:hover{
+          background-color:#fcf2e8;
+          cursor: pointer;
+       }
+          &-text{
+             .big-text{
+                   @include text-property($size:35px,$font:Barlow-semi-bold,
+                   $color:$top-heading-color,$text-transform:unset);
+             }
+             .small-text{
+                   @include text-property($size:20px,$font:Barlow-semi-bold
+                   ,$color:$top-heading-color,$text-transform:unset);
+ 
+             }
+          }
+       }
+    
+ 

@@ -1,0 +1,12 @@
+    .header{
+    padding: 0 0 5% 0;
+    display: flex;
+        &-text{
+            &-big-title{ 
+                width:84%;
+                margin-left:16%;
+            text-align: center;
+                padding: 2%;
+            }
+        }
+    } 

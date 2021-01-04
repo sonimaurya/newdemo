@@ -1,0 +1,170 @@
+.wrapper{
+    display:flex;
+flex-direction: column;
+    &__services{
+    background-image: url(../images/home/services_bg.jpg);
+    background-size: 100% 100%;
+    //min-height: 938px;
+    position: relative;
+   // padding:5% ;
+    &__about_us{
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-top:1%;
+        padding-bottom:1%;
+        background-color: $services-background-color;
+        width: 75%;
+         top:-9%;
+        left: 12.5%;
+        position: absolute;
+        &__top{
+            text-align: center;
+            &__heading{
+                text-transform: uppercase;
+                font-size: 40px;
+                color: #474747;
+                font-family: Barlow-semi-bold;
+                text-align: center;
+            }
+           &__line{
+               @include headingLine;
+            }
+        }
+        &__para{
+            text-align: center;
+            padding:1% 5% ;
+            &__text{
+            font-size: 20px;
+            color: $top-heading-color;
+            font-family: Barlow-medium-bold;  
+            // text-align: center;
+            line-height:2;
+            letter-spacing: 1px;
+            padding-bottom: 2%;
+            }
+            &__know{
+                text-transform: uppercase;
+                font-size: 20px;
+                color: #e27f21;
+                font-family: Barlow-bold;
+                text-decoration: none;
+                line-height: 2;
+                letter-spacing: 1px;
+            }
+        }
+        &__box{
+            display: flex;
+            justify-content: space-between;
+            @import '__aboutus_card.scss';
+        }
+        
+    }
+    &__products{
+        margin-top:25%;
+        padding-left:2%;
+        padding-right:2%;
+        &__heading{
+            text-align: center;
+           
+                &__top{
+                    text-transform: uppercase;
+                    font-size: 40px;
+                    color: #ffffff;
+                    font-family: Barlow-semi-bold;
+                }
+                &__top__line{
+                   @include headingLine;
+                }
+              
+        }
+        &__box{
+            display: flex;
+            justify-content:space-between;
+            padding:10px;
+        //@include layout($direction:row,$justify:space-between,$padding:10px);
+        &__l{
+           width: 50%; 
+           &__para{
+            line-height: 2;
+            text-align: left;
+            //padding-left:63px;
+            &__button{
+                @include textButton($width:36%,$height:58px);
+                margin-top:46px;
+            }
+         &__text{
+            font-size: 24px;
+            color: #ffffff;
+            font-family: Barlow-regular;
+        }
+        }              
+        }
+        &__r{
+            width: 50%;
+            &__slideshow{
+                max-width: 1000px;
+                position: relative;
+                margin: auto;
+                &__slides{
+                    padding: 0px 50px;
+                    display: block;
+                    &__shadow{
+                        width:85%;
+                        height: 248px;
+                        background: linear-gradient(45deg, #908d8d0a, #80787854, #bfbaba26);
+                        border-radius: 15px;
+                        //padding:0 30px;
+                        margin-left: -28px;
+                        position: absolute;
+                        margin-top:30px;
+                        &__img{
+                            position: relative;
+                            width: 90%;
+                            height: 300px;
+                            border-radius: 15px;
+                        }
+                    }
+                   
+                }
+                &__slides--fade{
+                    animation-name: fade;
+                    animation-duration: 1.5s;
+                }
+                @-webkit-keyframes fade {
+                    from {opacity: .4} 
+                    to {opacity: 1}
+                  }
+                  
+                  @keyframes fade {
+                    from {opacity: .4} 
+                    to {opacity: 1}
+                  }
+            }
+            &__slideshow_dot_box{
+                text-align: center;
+                margin-top: 30px;
+                &__dot{
+                    cursor: pointer;
+                    height: 15px;
+                    width: 15px;
+                    margin: 0 2px;
+                    background-color:$top-heading-color;
+                    border-radius: 50%;
+                    display: inline-block;
+                    transition: background-color 0.6s ease;
+                    &:hover{
+                        @include slideshoe_dot;
+                    }
+                }
+                .active{
+                    @include slideshoe_dot;
+                }
+            }
+        }
+        }
+    }
+
+}
+}

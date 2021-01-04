@@ -1,0 +1,19 @@
+.header{
+    background-image:url(../images/services/services_bg.jpg);
+    background-size:100% 100%;
+    height: auto;
+    padding-bottom:10%;
+    .header-side-nav{
+        display: none;
+    }
+    &-text{
+        display:flex;
+        padding:2%;
+        &-big-title{
+            width:84%;
+            margin-left:16%;
+            padding:2%;
+            font-size:40px;
+        }
+    }
+}

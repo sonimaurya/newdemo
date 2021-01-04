@@ -1,0 +1,72 @@
+&-page{
+    &-wrapper{
+        .wrapper-text{
+            p{
+                line-height: 27px;
+                letter-spacing: 1.3px;
+            }
+        }
+        .wrapper-images{
+            display:flex;
+            justify-content: space-between;
+            padding:4% 9%;
+        
+            .responsive-img{
+                width:40%;
+                .img-text{
+                    @include text-property($text-transform:none,$size:20px,$font:barlow-regular
+                    ,$color:$top-heading-color);
+                     padding:5% 0; 
+                     text-align: center;
+                     letter-spacing: 1.3px;;
+                }
+            }
+            .responsive-img:first-child ,.responsive-img:last-child{
+                img{
+                    
+                border:6px solid $text-button-color;
+                border-radius: 8px;
+                }
+            }
+            .middle-img{
+                width: 12%;
+                height: 73px;
+                margin: 10% 0 10% 0;
+            }
+              
+        }
+        .wrapper-box{
+            display:flex;
+            justify-content:space-between;
+            margin:4% 9%;
+            justify-content: center;
+            //padding: 1% 5%;
+            padding:1% 0;
+            border:1px solid grey;
+            border-radius: 8px;
+            &-text{
+                width:50%;
+              @include text-property($font:Barlow-bold,$color:$top-heading-color
+              ,$text-transform:capitalize,$size:72px);
+              text-align: center;
+            }
+            &-image{
+                width:50%;
+                display:flex;
+                padding:2%;
+                justify-content: center;
+                &-l{
+                 // @include services2-box($padding:8% 10% 6% 10%);
+                  @include services2-box($padding:8%);
+                }
+                &-r{
+                    @include services2-box($padding:8%);
+                }
+            }
+           
+        }
+        .services2-footer{
+          text-align: center;
+          }
+    }
+}

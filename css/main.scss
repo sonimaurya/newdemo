@@ -1,0 +1,20 @@
+@import '__mixin.scss';
+@import '__variable.scss';
+@import '__fonts.scss';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:$primary-text-color;
+   // letter-spacing: 1.5px;
+}
+
+
+@import 'home/__header.scss',
+        'home/__services.scss',
+        'home/__news',
+        'home/__getintouch',
+        'home/__footer';
+
+
+@import '__media.scss';

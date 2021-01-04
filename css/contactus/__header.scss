@@ -1,0 +1,10 @@
+.header{
+    background-image: url(../images/contact-us/contactus_bg.jpg);
+    &-text{
+        padding:6% 0;
+        &-small-title{
+        text-transform: none;
+        font-family:Barlow-regular;
+        }
+    }
+}
