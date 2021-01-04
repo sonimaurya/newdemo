@@ -15,11 +15,12 @@
             color: #474747;
             font-family: Barlow-semi-bold;
 
+
         }
         &__line{
            @include headingLine;
         }
-    }
+    } 
     &__description{
         display: flex;
         justify-content: space-between;
@@ -67,5 +68,5 @@
     border-top:2px solid $about-us-border-color;
    
 }
-    }
+}
 }

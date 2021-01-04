@@ -39,17 +39,6 @@
 }
 
 
-@mixin  services2-box($padding:10%,$margin:5%) {
-   padding:$padding;
-   margin:$margin;
-   border:1px solid grey;
-   border-radius: 8px;
-   &-text{
-       @include text-property($font:Barlow-medium-bold,$color:$top-heading-color
-          ,$size:24px); 
-          text-align: center;
-   }
-}
 
 
 @mixin scroll-btn($top:89%,$right:4%) {
