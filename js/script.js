@@ -42,3 +42,11 @@ $(document).ready(function() {
     });
     
 });
+$(window).scroll(function() {
+  var height = $(window).scrollTop();
+  if (height > 100) {
+      $('#back2Top').fadeIn();
+  } else {
+      $('#back2Top').fadeOut();
+  }
+});

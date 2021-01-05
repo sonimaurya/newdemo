@@ -695,7 +695,9 @@
 }
 
 .footer__scroll_button {
-  position: absolute;
+  display: none;
+  position: fixed;
+  bottom: 12%;
   right: 4%;
   cursor: pointer;
 }
