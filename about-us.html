@@ -10,101 +10,92 @@
     />
   </head>
   <body>
+    	<!-- menu section -->
+	<div class="nav">
+		<!-- header logo -->
+		<div class="nav__logo">
+			<img src="images/home/Services.png">
+		</div>
+		<!-- end logo -->
+		<!-- header nav -->
+		<div class="nav__menu">
+			<!-- mobile menu -->
+			<div class="nav__menu__mobile_menu" >
+				<i class="fa fa-bars " onclick="display_menu()"></i>
+				<ul class="nav__menu__mobile_menu__list">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li class="active">
+						<a href="about-us.html">About Us</a>
+					</li>
+					<li id="dropdown-mobile">
+						<a href="#">Services & Products</a>
+						<div class="nav__menu__mobile_menu__list__items__dropdown">
+							<div class="nav__menu__mobile_menu__list__items__dropdown__list">
+							  <a class="nav__menu__mobile_menu__list__items__dropdown__list__heading">Services</a>
+							  <ul class="nav__menu__mobile_menu__list__items__dropdown__list__sublist"><li><a href="services.html">Pavement</a></li>
+								  <li><a href="services2.html">APDIS</a></li>
+								  <li><a href="services3.html">PDAS</a></li>
+							  </ul>
+							  </div>
+							  <div class="nav__menu__mobile_menu__list__items__dropdown__list">
+								  <a  class="nav__menu__mobile_menu__list__items__dropdown__list__heading">Products</a>
+								  <ul class="nav__menu__mobile_menu__list__items__dropdown__list__sublist">
+									  <li><a href="services4.html">DAD</a></li>
+									  <li><a href="services5.html">ASCIS</a></li>
+									  <li><a href="services6.html">MPVC</a></li>
+								  </ul>
+								  </div>
+						  </div>
+					</li>
+					
+					<li>
+						<a href="contact.html">Contact Us</a>
+					</li>
+				</ul>
+			</div>
+			<!-- end mobile menu -->
+			<!-- desktop menu -->
+			<ul class="nav__menu__list">
+				<li class="nav__menu__list__items">
+					<a href="index.html" class="nav__menu__list__items__link active">Home</a>
+				</li>
+				<li class="nav__menu__list__items">
+					<a href="about-us.html" class="nav__menu__list__items__link">About Us</a>
+				</li>
+				<li class="nav__menu__list__items"  id="dropdown">
+					<a href="#" class="nav__menu__list__items__link">
+						Services & Products</a>
+						<div class="nav__menu__list__items__dropdown">
+							<div class="nav__menu__list__items__dropdown__list">
+							  <h3 class="nav__menu__list__items__dropdown__list__heading">Services</h3>
+							  <ul class="nav__menu__list__items__dropdown__list__sublist"><li><a href="services.html">Services</a></li>
+								  <li><a href="services2.html">APDIS</a></li>
+								  <li><a href="services3.html">PDAS</a></li>
+							  </ul>
+							  </div>
+							  <div class="nav__menu__list__items__dropdown__list">
+								  <h3  class="nav__menu__list__items__dropdown__list__heading">Products</h3>
+								  <ul class="nav__menu__list__items__dropdown__list__sublist">
+									  <li><a href="services4.html">DAD</a></li>
+									  <li><a href="services5.html">ASCIS</a></li>
+									  <li><a href="services6.html">MPVC</a></li>
+								  </ul>
+								  </div>
+						  </div>
+				</li>
+					
+				<li class="nav__menu__list__items">
+					<a href="contact.html" class="nav__menu__list__items__link">Contact Us</a>
+				</li>
+			</ul>
+			<!-- end desktop menu -->
+		</div>
+		<!-- end nav -->
+	</div>
+	<!-- end menu -->
     <div class="contact_wrapper">
-  <!-- header section -->
-      <section class="contact_wrapper__header">
-        <div class="contact_wrapper__header__nav">
-          <!-- header logo -->
-          <div class="contact_wrapper__header__nav__logo">
-            <img src="images/home/Services.png">
-          </div>
-          <!-- end logo -->
-          <!-- header nav -->
-          <div class="contact_wrapper__header__nav__menu">
-            <!-- mobile menu -->
-            <div class="contact_wrapper__header__nav__menu__mobile_menu" >
-              <i class="fa fa-bars " onclick="display_menu()"></i>
-              <ul class="contact_wrapper__header__nav__menu__mobile_menu__list">
-                <li class="active">
-                  <a href="index.html">Home</a>
-                </li>
-                <li>
-                  <a href="about-us.html">About Us</a>
-                </li>
-                <li id="dropdown-mobile">
-                  <a href="#">Services & Products</a>
-                  <div class="contact_wrapper__header__nav__menu__mobile_menu__list__items__dropdown">
-                    <div class="contact_wrapper__header__nav__menu__mobile_menu__list__items__dropdown__list">
-                      <h3 class="contact_wrapper__header__nav__menu__mobile_menu__list__items__dropdown__list__heading">Services</h3>
-                      <ul class="contact_wrapper__header__nav__menu__mobile_menu__list__items__dropdown__list__sublist"><li><a href="services.html">Services</a></li>
-                        <li><a href="services2.html">APDIS</a></li>
-                        <li><a href="services3.html">PDAS</a></li>
-                      </ul>
-                      </div>
-                      <div class="contact_wrapper__header__nav__menu__mobile_menu__list__items__dropdown__list">
-                        <h3  class="contact_wrapper__header__nav__menu__mobile_menu__list__items__dropdown__list__heading">Products</h3>
-                        <ul class="contact_wrapper__header__nav__menu__mobile_menu__list__items__dropdown__list__sublist">
-                          <li><a href="services4.html">DAD</a></li>
-                          <li><a href="services5.html">ASCIS</a></li>
-                          <li><a href="services6.html">MPVC</a></li>
-                        </ul>
-                        </div>
-                    </div>
-                </li>
-                
-                <li>
-                  <a href="contact.html">Contact Us</a>
-                </li>
-              </ul>
-            </div>
-            <!-- end mobile menu -->
-            <!-- desktop menu -->
-            <ul class="contact_wrapper__header__nav__menu__list">
-              <li class="contact_wrapper__header__nav__menu__list__items">
-                <a href="index.html" class="contact_wrapper__header__nav__menu__list__items__link active">Home</a>
-              </li>
-              <li class="contact_wrapper__header__nav__menu__list__items">
-                <a href="about-us.html" class="contact_wrapper__header__nav__menu__list__items__link">About Us</a>
-              </li>
-              <li class="contact_wrapper__header__nav__menu__list__items"  id="dropdown">
-                <a href="#" class="contact_wrapper__header__nav__menu__list__items__link">
-                  Services & Products</a>
-                  <div class="contact_wrapper__header__nav__menu__list__items__dropdown">
-                    <div class="contact_wrapper__header__nav__menu__list__items__dropdown__list">
-                      <h3 class="contact_wrapper__header__nav__menu__list__items__dropdown__list__heading">Services</h3>
-                      <ul class="contact_wrapper__header__nav__menu__list__items__dropdown__list__sublist"><li><a href="services.html">Services</a></li>
-                        <li><a href="services2.html">APDIS</a></li>
-                        <li><a href="services3.html">PDAS</a></li>
-                      </ul>
-                      </div>
-                      <div class="contact_wrapper__header__nav__menu__list__items__dropdown__list">
-                        <h3  class="contact_wrapper__header__nav__menu__list__items__dropdown__list__heading">Products</h3>
-                        <ul class="contact_wrapper__header__nav__menu__list__items__dropdown__list__sublist">
-                          <li><a href="services4.html">DAD</a></li>
-                          <li><a href="services5.html">ASCIS</a></li>
-                          <li><a href="services6.html">MPVC</a></li>
-                        </ul>
-                        </div>
-                    </div>
-              </li>
-                
-              <li class="contact_wrapper__header__nav__menu__list__items">
-                <a href="contact.html" class="contact_wrapper__header__nav__menu__list__items__link">Contact Us</a>
-              </li>
-            </ul>
-            <!-- end desktop menu -->
-          </div>
-          <!-- end nav -->
-        </div>
-        <!-- header text -->
-        <div class="contact_wrapper__header__text">
-          <div class="contact_wrapper__header__text__big_title">NEXCO HIGHWAY SOLUTIONS OF AMERICA, INC. </div>
-          <div class="contact_wrapper__header__text__small_title">A NEXCO-Central Group</div>
-            <!-- <button class="header-text-button">KNOW MORE</button> -->
-        </div>
-        <!-- end header text -->
-      </section>
-     <!-- end section -->
       <section class="team">
         <div class="team-text">
           <div class="team-text-title">
@@ -270,16 +261,16 @@
             <img src="images/icons/top.png">
           </div>
       </section>
-      <section class="footer">
-        <img src="images/home/Services.png" class="footer-logo" />
-        <div class="footer-privacy-text"><span>Privacy Policy</span></div>
-        <div class="footer-copyright-text">
-          Copyright &copy; Central Nippon Expressway Company Limited All Rights
-          Reserved.
-        </div>
-      </section>
+     
     </div>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/script.js"></script>
+   <!-- footer section -->
+<section class="footer">
+	<img src="images/home/Services.png" class="footer__logo">
+	<div class="footer__privacy_text"><span>Privacy Policy</span></div>
+	<div class="footer__copyright_text">Copyright &copy; Central Nippon Expressway Company Limited All Rights Reserved.</div>
+</section>
+<!-- end section -->
+<script src="js/jquery.min.js"></script>
+<script src="js/script.js"></script>
   </body>
 </html>
