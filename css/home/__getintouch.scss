@@ -52,8 +52,15 @@
             }
             &__text_button{
                 margin:40px;
-             @include textButton($width:16%);
-            //  border:2px solid $secondary-text-color;
+             background:$text-button-color;
+             font-family: Barlow-bold;
+             width:16%;
+             color: $secondary-text-color;
+             outline: none;
+             border: none;
+             height:58px;
+             font-size: 20px;
+             border-radius: 30px;
             }
         }
         &__scroll_button{

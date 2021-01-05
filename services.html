@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Smart Pavement Management System</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    	<!-- menu section -->
+	<div class="nav">
+		<!-- header logo -->
+		<div class="nav__logo">
+			<img src="images/home/Services.png">
+		</div>
+		<!-- end logo -->
+		<!-- header nav -->
+		<div class="nav__menu">
+			<!-- mobile menu -->
+			<div class="nav__menu__mobile_menu" >
+				<i class="fa fa-bars " onclick="display_menu()"></i>
+				<ul class="nav__menu__mobile_menu__list">
+					<li class="active">
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="about-us.html">About Us</a>
+					</li>
+					<li id="dropdown-mobile">
+						<a href="#">Services & Products</a>
+						<div class="nav__menu__mobile_menu__list__items__dropdown">
+							<div class="nav__menu__mobile_menu__list__items__dropdown__list">
+							  <a class="nav__menu__mobile_menu__list__items__dropdown__list__heading">Services</a>
+							  <ul class="nav__menu__mobile_menu__list__items__dropdown__list__sublist"><li><a href="services.html">Pavement</a></li>
+								  <li><a href="services2.html">APDIS</a></li>
+								  <li><a href="services3.html">PDAS</a></li>
+							  </ul>
+							  </div>
+							  <div class="nav__menu__mobile_menu__list__items__dropdown__list">
+								  <a  class="nav__menu__mobile_menu__list__items__dropdown__list__heading">Products</a>
+								  <ul class="nav__menu__mobile_menu__list__items__dropdown__list__sublist">
+									  <li><a href="services4.html">DAD</a></li>
+									  <li><a href="services5.html">ASCIS</a></li>
+									  <li><a href="services6.html">MPVC</a></li>
+								  </ul>
+								  </div>
+						  </div>
+					</li>
+					
+					<li>
+						<a href="contact.html">Contact Us</a>
+					</li>
+				</ul>
+			</div>
+			<!-- end mobile menu -->
+			<!-- desktop menu -->
+			<ul class="nav__menu__list">
+				<li class="nav__menu__list__items">
+					<a href="index.html" class="nav__menu__list__items__link active">Home</a>
+				</li>
+				<li class="nav__menu__list__items">
+					<a href="about-us.html" class="nav__menu__list__items__link">About Us</a>
+				</li>
+				<li class="nav__menu__list__items"  id="dropdown">
+					<a href="#" class="nav__menu__list__items__link">
+						Services & Products</a>
+						<div class="nav__menu__list__items__dropdown">
+							<div class="nav__menu__list__items__dropdown__list">
+							  <h3 class="nav__menu__list__items__dropdown__list__heading">Services</h3>
+							  <ul class="nav__menu__list__items__dropdown__list__sublist"><li><a href="services.html">Services</a></li>
+								  <li><a href="services2.html">APDIS</a></li>
+								  <li><a href="services3.html">PDAS</a></li>
+							  </ul>
+							  </div>
+							  <div class="nav__menu__list__items__dropdown__list">
+								  <h3  class="nav__menu__list__items__dropdown__list__heading">Products</h3>
+								  <ul class="nav__menu__list__items__dropdown__list__sublist">
+									  <li><a href="services4.html">DAD</a></li>
+									  <li><a href="services5.html">ASCIS</a></li>
+									  <li><a href="services6.html">MPVC</a></li>
+								  </ul>
+								  </div>
+						  </div>
+				</li>
+					
+				<li class="nav__menu__list__items">
+					<a href="contact.html" class="nav__menu__list__items__link">Contact Us</a>
+				</li>
+			</ul>
+			<!-- end desktop menu -->
+		</div>
+		<!-- end nav -->
+	</div>
+	<!-- end menu -->
+    <div class="wrapper_services">
+      <section class="wrapper_services__header">
+        <div class="wrapper_services__header__text">
+          <div class="wrapper_services__header__text__big_title">smart pavement management system</div>
+        </div>
+      </section>
+      <section class="wrapper_services__sidebar">
+        <div class="wrapper_services__sidebar__list">
+          <div class="wrapper_services__sidebar__list__heading">            
+              PAVEMENTS 
+          </div>
+          <div class="wrapper_services__sidebar__list__sublist">
+            <ul>
+              <li class="wrapper_services__sidebar__list__sublist--active">
+                <a href="services.html"> smart pavement management sysytem</a>
+              </li>
+              <li>
+                <a href="services2.html"> Automated Pavement Distress Identification System (APDIS) </a>
+              </li>
+              <li>
+                <a href="">Pavement Data Analytics Service (PDAS)  </a>
+              </li>
+            </ul>
+            </div>
+        </div>
+        <div class="wrapper_services__sidebar__list">
+          <div class="wrapper_services__sidebar__list__heading">           
+              TRAFFIC 
+          </div>
+          <div class="wrapper_services__sidebar__list__sublist">
+            <ul>
+              <li>
+                <a href="services.html">  Drive Assisting Delineators (DAD) </a>
+              </li>
+              
+            </ul>
+            </div>
+        </div>
+        <div class="wrapper_services__sidebar__list">
+          <div class="wrapper_services__sidebar__list__heading">
+              BRIDGES 
+          </div>
+          <div class="wrapper_services__sidebar__list__sublist">
+            <ul>
+              <li>
+                <a href="services.html">  Automated Stay-Cable Inspection System (ASCIS) </a>
+              </li>
+              
+            </ul>
+            </div>
+        </div>
+        <div class="wrapper_services__sidebar__list">
+          <div class="wrapper_services__sidebar__list__heading">
+              TUNNELS 
+          </div>
+          <div class="wrapper_services__sidebar__list__sublist">
+            <ul>
+              <li>
+                <a href="services.html"> Model-Based Predictive Ventilation Control System (MPVC) </a>
+              </li>
+              
+            </ul>
+            </div>
+        </div>
+       </section>
+     <section class="wrapper_services__content">     
+       <section class="wrapper_services__content__page">
+         <section class="wrapper_services__content__page__top_text">
+          <p>NHSA provides road operators and engineering companies with
+             pavement monitoring and management tools. </p>
+             <p>The system includes the features to: </p>
+         </section> 
+         <section class="wrapper_services__content__page__unique_feature">
+          <div class="wrapper_services__content__page__unique_feature__box">
+          <div class="wrapper_services__content__page__unique_feature__box__heading">Unique Features</div>
+          <div class="wrapper_services__content__page__unique_feature__box__text_points">
+            <ul>
+              <li>Grasp overview of pavement conditions</li>
+              <li>Check the pavement condition in the pop-up pictures</li>
+              <li> Evaluate overall pavement condition using Al technology</li>
+              <li>Predict the pavement performance in the future</li>
+              <li>Estimate the maintenance costs to be needed</li>
+            </ul>
+          </div>
+        </div>
+        </section>  
+        <section class="wrapper_services__content__page__pavement_management">
+          <img src="images/services/service.jpg">
+        </section>
+        <section class="wrapper_services__content__page__values">
+            <div class="wrapper_services__content__page__values__b">
+              <div class="wrapper_services__content__page__values__b__h">Values</div>
+              <div class="wrapper_services__content__page__values__b__t">
+                <div class="wrapper_services__content__page__values__b__t__cards">
+                  <div class="wrapper_services__content__page__values__b__t__cards__icon">
+                    <img src="images/services/affordable.png">
+                  </div>
+                  <div class="wrapper_services__content__page__values__b__t__cards__heading">
+                    Affordable Pavement Data Collection 
+                  </div>
+                  <div class="wrapper_services__content__page__values__b__t__cards__desc">
+                    You only need a GoPro camera to collect data as a physical device.
+                     Most services are performed through the Internet. 
+                  </div>
+                </div>
+                <div class="wrapper_services__content__page__values__b__t__cards">
+                  <div class="wrapper_services__content__page__values__b__t__cards__icon">
+                    <img src="images/services/hd.png">
+                  </div>
+                  <div class="wrapper_services__content__page__values__b__t__cards__heading">
+                    High Quality Images
+                  </div>
+                  <div class="wrapper_services__content__page__values__b__t__cards__desc">
+                    HD or 4K high quality images are stored for 
+                    the current and future reviews and engineering decisions.  
+                  </div>
+                </div>
+                <div class="wrapper_services__content__page__values__b__t__cards">
+                  <div class="wrapper_services__content__page__values__b__t__cards__icon">
+                    <img src="images/services/consistent.png">
+                  </div>
+                  <div class="wrapper_services__content__page__values__b__t__cards__heading">
+                    Consistent, Data-driven Decisions 
+                  </div>
+                  <div class="wrapper_services__content__page__values__b__t__cards__desc">
+                    Al and data analysis engines support the data-driven decisions.  
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="wrapper_services__content__page__values__footer">
+              "Afforedable Pavement Monitoring and Management Tools"
+            </div>
+        </section>
+     </section>
+     
+    </div>
+    <!-- footer section -->
+<section class="footer footer--margin_left">
+	<img src="images/home/Services.png" class="footer__logo">
+	<div class="footer__privacy_text"><span>Privacy Policy</span></div>
+	<div class="footer__copyright_text">Copyright &copy; Central Nippon Expressway Company Limited All Rights Reserved.</div>
+	<!-- scroll button -->
+	<div class="footer__scroll_button" id="back2Top">
+		<img src="images/icons/top.png">
+	  </div>
+	   <!-- end button -->
+</section>
+<!-- end section -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

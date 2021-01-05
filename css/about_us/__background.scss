@@ -67,7 +67,14 @@
        flex-direction: column;
        justify-content: center;
        &__btn{
-        @include textButton($width:13%);
+        background:$text-button-color;
+        font-family: Barlow-bold;
+        width:13%;
+        color: $secondary-text-color;
+        outline: none;
+        border: none;
+        align-self: center;
+        border-radius: 30px;
         //border:2px solid $text-button-color;
         height:45px;
         text-transform: uppercase;

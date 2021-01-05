@@ -22,8 +22,15 @@
           'about_us/__solution-overview',
           'about_us/__background';
 
-          @import 'contactus/__header.scss',
-                   'contactus/__middle-content.scss',
-                   'contactus/__project_with_us' ;
+@import 'contactus/__header.scss',
+        'contactus/__middle-content.scss',
+        'contactus/__project_with_us' ;
 
+@import 'services/__header',
+        'services/__sidebar',
+        'services/__page';
+ @import 'services2/__page';
+ @import 'services3/__page';
+ @import 'services4/__page';
+ @import 'services5/__page';
 @import '__media.scss';

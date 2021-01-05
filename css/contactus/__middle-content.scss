@@ -106,7 +106,11 @@
             &__form_btn{
                 &__submit{
                     margin:4% 0 0 0;
-                    @include textButton($background:$text-button-color,$width:30%);
+                    background:$text-button-color;
+                    width:30%;
+                    color: $secondary-text-color;
+                    outline: none;
+                    border-radius: 30px;
                     border:1px solid $text-button-color;
                     height: 46px;
                     font-family:Barlow-medium-bold;
