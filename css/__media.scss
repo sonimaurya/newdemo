@@ -1,61 +1,72 @@
-@media only screen /*and (min-width : 280px)*/ and (max-width : 768px) {
+@media only screen  and (max-width : 768px) {
+    .nav{
+        position: relative;
+        .fa-times{
+            color:#e27f21;
+            cursor: pointer;
+
+        }
+        .fa-ellipsis-h{
+            color:#e27f21;
+            cursor: pointer;
+        }
+        &__menu{
+            &__mobile_menu{
+                display:block;
+                &__list{
+                    display: none;
+                    position: absolute;
+                    z-index: 1 ;
+                    background: white;
+                    top: 100%;
+                    width: 100%;
+                    text-align: right;
+                    right: 0;
+                    padding: 2% 5%;
+                    &__items{
+                        &__dropdown{
+                            margin: 5px 0;
+                        &__list{
+                            display: none;
+                            margin: 10px 0;
+                            &__heading{
+                              color:#000000;
+                              font-family: Barlow-medium-bold;
+                            }
+                          }
+                       }
+                    }
+                    li{
+                        list-style-type: none;
+                        padding: 10px 22px;
+                        a{  font-family: Barlow-medium-bold;
+                            text-transform: uppercase;
+                            text-decoration: none;
+                            color: #000000;
+                            text-align: center;
+                            overflow: hidden;
+                            font-size: 16px;
+                            white-space: nowrap;
+                        }
+                    }
+                    
+                }
+                .fa-bars{
+                    color:#e27f21;
+                    cursor: pointer;
+                    font-size:30px;
+                }
+            }
+            &__list{
+                display: none;
+            }
+        }
+    }
 .wrapper{
     &__header{
         padding-bottom: 30%;;
         background-size: cover;
-        &__nav{
-            .fa-times{
-                color:$secondary-text-color;
-                cursor: pointer;
-            }
-            .fa-ellipsis-h{
-                color:$secondary-text-color;
-                cursor: pointer;
-            }
-            &__menu{
-                &__mobile_menu{
-                    display:block;
-                    position: relative;
-                    &__list{
-                        display: none;
-                        background-color: #e27f21;
-                        position: absolute;
-                        z-index: 1;
-                        list-style: none;
-                        padding: 5px;
-                        right: 0;
-                        &__items{
-                            &__dropdown__list{
-                                display: none;
-                                &__heading{
-                                  color:#ffffff;
-                        }
-                    }
-                }
-                        li{
-                            list-style-type: none;
-                            padding: 10px 22px;
-                            a{
-                                text-transform: uppercase;
-                                text-decoration: none;
-                                color: #ffffff;
-                                text-align: center;
-                                overflow: hidden;
-                                white-space: nowrap;
-                            }
-                        }
-                        
-                    }
-                    .fa-bars{
-                        color:$secondary-text-color;
-                        cursor: pointer;
-                    }
-                }
-                &__list{
-                    display: none;
-                }
-            }
-        }
+      
         &__text{
             &__big_title{
                 font-size:42px;

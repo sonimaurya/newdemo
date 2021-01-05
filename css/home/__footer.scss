@@ -1,8 +1,5 @@
 
-.wrapper{
-    display:flex;
-    flex-direction: column; 
-    &__footer{
+    .footer{
     padding:40px;
     font-family: Barlow-semi-bold;
     flex-direction:column;
@@ -24,5 +21,4 @@
     &__copyright_text{
         text-align: center;
     }
-}
 }
