@@ -1,32 +1,31 @@
-.mission-statements{
+.contact_wrapper{
+    &__mission_statements{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: $mission-statements-background;
-    &-title{
+    &__title{
         text-align: center;
         padding: 2% 0 0 0;
-        .top-heading{
+        &__top{
             @include text-property($size:35px,$color:$primary-text-color
             ,$font:Barlow-bold);
         }
-        .horizontal-line{
+        &__line{
            @include headingLine;
            background:$mission-statements-border;
         }
     }
-    &-para{
+    &__para{
         display: flex;
         justify-content: space-between;
-        //padding:0 4% 4% 4%;
         padding:3% 4%;
-        &-cards{
+        &__cards{
             width:33.33%;
-            //padding: 3% 4% 0 4%;
             padding-left:4%;
             padding-right:4%;
             text-align: center;
-            &-text{
+            &__text{
                 @include text-property($text-transform:none,$size:20px,$font:'Barlow-regular');
 
             }
@@ -36,4 +35,5 @@
             }
         }
     }
+}
 }

@@ -21,4 +21,10 @@
     &__copyright_text{
         text-align: center;
     }
+    &__scroll_button{
+        position: absolute;
+        // top: 89%;
+        right: 4%;
+        cursor: pointer;
+    }
 }

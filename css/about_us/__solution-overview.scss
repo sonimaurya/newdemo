@@ -1,19 +1,20 @@
-.solution-overview{
+.contact_wrapper{
+    &__solution_overview{
     display:flex;
     flex-direction:column;
-    &-title{
+    &__title{
         text-align: center;
         padding:2%;
-        .top-heading{
+        &__top{
             @include text-property($size:35px,$color:$top-heading-color
             ,$font:Barlow-bold);
             
         }
-        .horizontal-line{
+        &__line{
            @include headingLine;
         }
     }
-    &-chart-box{
+    &__chart_box{
         display:flex;
         flex-direction:column;
         text-align: center;
@@ -23,16 +24,16 @@
         border-radius: 23px;
         padding:2%;
         height:554px;
-            &-logo{
+            &__logo{
                 margin: 0 0 4% 0;
             }
-        &-parent{
+        &__parent{
             display:flex;
             flex-direction:column;
             position: relative;
-            .solution-overview-chart-box-line{
+            &__line{
                 display:flex;
-            &-left{
+            &__left{
                 border-top:5px solid $text-button-color;
                 border-left:5px solid $text-button-color;
                 border-top-left-radius:20px;
@@ -41,7 +42,7 @@
                 width:50%;
                 margin-left:15%;
             }
-            &-right{
+            &__right{
                 border-top:5px solid $text-button-color;
                 border-left:5px solid $text-button-color;
                 border-right:5px solid $text-button-color;
@@ -53,17 +54,17 @@
             }
         }
         
-        .solution-overview-chart-box-info-box{
+        &__info_box{
             position: absolute;
             top:69%;
             width:100%;
             display: flex;
-            .solution-overview-info-box-body{
+            &__body{
                 padding:2%;
                 display: flex;
                 flex-direction: column;
                 width:33.33%;
-                .solution-overview-info-box-card{
+                &__card{
                      background-color:$text-button-color;
                      padding:5%;
                      margin:2% 2%;
@@ -72,7 +73,7 @@
                      ,$color:$secondary-text-color);
                      font-family: 'Barlow-medium-bold';
                 }
-                .solution-overview-info-box-text{
+                &__text{
                     text-align:left;
                     padding:5%;
                     margin:0 2%;
@@ -84,6 +85,8 @@
                 }
             }
         }
+        
     }
     }
+}
 }

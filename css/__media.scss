@@ -1,6 +1,6 @@
 @media only screen  and (max-width : 768px) {
     .nav{
-        position: relative;
+        position: fixed;
         .fa-times{
             color:#e27f21;
             cursor: pointer;
@@ -18,7 +18,7 @@
                     position: absolute;
                     z-index: 1 ;
                     background: white;
-                    top: 100%;
+                    top: 99%;
                     width: 100%;
                     text-align: right;
                     right: 0;
@@ -223,33 +223,32 @@ color: $secondary-text-color;
         }
     }
 }
-.about-us{
-    .header{
-        //background-image:url(../images/about-us/aboutus_bg_mobile.jpg);
+.contact_wrapper{
+    &__header{
         background-size: cover;
     }
-    .team{
+    &__team{
         display: flex;
         flex-direction: column;
         background-size:auto;
-        &-text{
+        &__text{
             width:100%;
         }
-        &-images{
+        &__images{
             width:100%;
             display: flex;
         flex-direction: column;
         padding-top:10%;
-            &-body{
+            &__body{
                 text-align: center;
             } 
         }
     }
-    .mission-statements{
-        &-para{
+    &__mission_statements{
+        &__para{
            flex-direction:column;
            padding:0 10%;
-            &-cards{
+            &__cards{
                 width:100%;
                 padding:10% 0;
                 &:nth-child(2){
@@ -261,43 +260,41 @@ color: $secondary-text-color;
             }
         }
     }
-    .background{
+    &__background{
         background-size:auto;
-        &-cards{
+        &__cards{
             flex-direction:column; 
-            &-body{
+            &__body{
                 width:100%;
                 padding:10% 0;
             }
         }
-        &-button{
+        &__button{
             padding: 3%;
-            &-btn{
+            &__btn{
                 width: 50%;
             }
         }
     }
-    .solution-overview{
+    &__solution_overview{
         padding: 6% 0;
-        &-chart-box{
+        &__chart_box{
             height:709px;
-            &-parent{
+            &__parent{
                 position: unset;
-                .solution-overview-chart-box-line{
+                &__line{
                display: none;
             }
             
-            .solution-overview-chart-box-info-box{
+            &__info_box{
                 position: unset;
                 top:unset;
                 width:100%;
                 margin-left:0;
                 display: flex;
                 flex-direction: column;
-                .solution-overview-info-box-body{
-                    width:100%;
-                   
-                   
+                &__body{
+                    width:100%;                   
                 }
             }
         }
@@ -680,17 +677,17 @@ width:60%;
             margin-top: 67%;
         }
     }
-    .about-us{
-        .solution-overview{
-            &-chart-box{
+    .contact_wrapper{
+        &__solution_overview{
+            &__chart_box{
                 height:864px;
     
             }
         }
-        .team{
+        &__team{
             display: flex;
             flex-direction: column;
-            &-images{
+            &__images{
                display: flex;
             }
         }
@@ -774,14 +771,14 @@ width:60%;
     }
     }
     }
-    .about-us{
-        .solution-overview{
-            &-chart-box{
+    .contact_wrapper{
+        &__solution_overview{
+            &__chart_box{
                 height:823px;
     
             }
         }
-        .background{
+        &__background{
            &-scroll-button{
                top:97%;
            }
@@ -854,6 +851,11 @@ width:60%;
             margin-top: 103%;
         }
     }
+    .contact_wrapper{
+        &__solution_overview__chart_box {
+            height: 772px;
+        }
+    }
 }
 @media screen and (min-width:375px) and (max-width:375px){
     .wrapper {
@@ -885,29 +887,29 @@ width:60%;
         }
     }
 }
-.about-us{
+.contact_wrapper{
     
-    .team{
+    &__team{
         display: flex;
         flex-direction: column;
         background-size:auto;
        
-        &-images{
+        &__images{
             display: flex;
-            &-body{
+            &__body{
                 text-align: center;
             } 
         }
     }
-    .solution-overview{
-        &-chart-box{
+    &__solution_overview{
+        &__chart_box{
             height:969px;
 
         }
     }
-    .background{
-        &-button{
-            &-btn{
+    &__background{
+        &__button{
+            &__btn{
               width:27%;
             }
         }

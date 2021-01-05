@@ -1,4 +1,5 @@
-.background{
+.contact_wrapper{
+    &__background{
     margin-top:10%;
     display: flex;
     flex-direction: column;
@@ -7,17 +8,17 @@
     position: relative;
     background-image: url(../images/about-us/corporate.jpg);
     background-size:100% 100%;
-    &-title{
+    &__title{
         text-align: center;
-        .top-heading{
+        &__top{
             @include text-property($size:40px
             ,$font:Barlow-semi-bold);
         }
-        .horizontal-line{
+        &__line{
            @include headingLine;
         }
     }
-    &-para{
+    &__para{
         //padding:5%;
         p{
         text-align: center;
@@ -26,33 +27,33 @@
         @include text-property($text-transform:none,$font:Barlow-regular,$size:20px);
     }
    }
-   &-cards{
+   &__cards{
        padding:4% 0;
        display: flex;
        justify-content: center;
-       &-body{
+       &__body{
            text-align: center;
            display: flex;
            justify-content: space-between;
            flex-direction: column;
            //padding:2% 5%;
            width: 33.3%;
-           .background-cards-title{
+           &__title{
               @include text-property($size:20px,$font:Barlow-semi-bold);
            }
-           .background-cards-desc{
+           &__desc{
             @include text-property($size:34px,$font:Barlow-semi-bold,$color:$about-us-background-text-color);
         }
-        .background-cards-footer{
+        &__footer{
             @include text-property($size:20px,$font:Barlow-regular);
         }
        }
    }
-   &-button{
+   &__button{
        display:flex;
        flex-direction: column;
        justify-content: center;
-       &-btn{
+       &__btn{
         @include textButton($width:13%);
         //border:2px solid $text-button-color;
         height:45px;
@@ -63,4 +64,5 @@
    &-scroll-button{
        @include scroll-btn($top:92%);
    }
+}
 }

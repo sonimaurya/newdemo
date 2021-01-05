@@ -16,7 +16,11 @@
         'home/__getintouch',
         'home/__footer';
 
-@import 'about_us/__header.scss';
+@import 'about_us/__header.scss',
+          'about_us/__team.scss',
+          'about_us/__mission-statement.scss',
+          'about_us/__solution-overview',
+          'about_us/__background';
 
 
 
