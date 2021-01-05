@@ -8,8 +8,10 @@
         text-align: center;
         padding: 2% 0 0 0;
         &__top{
-            @include text-property($size:35px,$color:$primary-text-color
-            ,$font:Barlow-bold);
+            font-size: 35px;
+              color:$primary-text-color;
+              font-family:Barlow-bold;
+              text-transform: uppercase;
         }
         &__line{
            @include headingLine;
@@ -26,7 +28,9 @@
             padding-right:4%;
             text-align: center;
             &__text{
-                @include text-property($text-transform:none,$size:20px,$font:'Barlow-regular');
+             font-size: 20px;
+              color:$primary-text-color;
+              font-family:Barlow-regular;
 
             }
             &:nth-child(2){

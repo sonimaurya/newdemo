@@ -10,12 +10,14 @@
        }
           &-text{
              .big-text{
-                   @include text-property($size:35px,$font:Barlow-semi-bold,
-                   $color:$top-heading-color,$text-transform:unset);
+                   font-size:35px;
+                color:$top-heading-color;
+                font-family:Barlow-semi-bold;
              }
              .small-text{
-                   @include text-property($size:20px,$font:Barlow-semi-bold
-                   ,$color:$top-heading-color,$text-transform:unset);
+                   font-size:20px;
+                color:$text-button-color;
+                font-family:Barlow-semi-bold;
  
              }
           }

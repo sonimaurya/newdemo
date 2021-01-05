@@ -1,45 +1,54 @@
-.middle-content{
+.wrapper_contactus{
+    &__middle_content{
     display: flex;
-    &-contact-us{
+    &__contact{
         width:50%;
         display: flex;
         flex-direction: column;
         padding:5%;
-        &-heading{
+        &__heading{
                 padding:10px;
                 text-align: center;
-            .top-heading{
-                @include text-property($size:40px,$color:$about-us-heading-text
-                ,$font:Barlow-semi-bold);
+            &__top{
+                text-transform: uppercase;
+                font-size: 40px;
+                color:$about-us-heading-text;
+                font-family:Barlow-semi-bold;
             }
-            .horizontal-line{
+            &__line{
                @include headingLine;
             }
         }
-        &-address{
+        &__address{
             text-align: center;
-            @include text-property($size:24px,$color:$top-heading-color
-            ,$font: Barlow-regular);
+            text-transform: uppercase;
+            font-size: 24px;
+            color:$top-heading-color;
+            font-family:Barlow-regular;
             padding:10% 0;
             line-height: 2;
             text-transform: none;
         }
-        &-call{
+        &__call{
             padding:10% 0;
-            &-text{
+            &__text{
                 text-align: center;
-                @include text-property($size:24px,$color:$top-heading-color
-                ,$font: Barlow-regular);
+                text-transform: uppercase;
+                font-size: 24px;
+                color:$top-heading-color;
+                font-family:Barlow-regular;
             }
-            &-number{
+            &__number{
                 padding:10px 0;
                 text-align: center;
-                @include text-property($size:50px,$color:$top-heading-color
-                ,$font: Barlow-medium-bold);
+                text-transform: uppercase;
+                font-size: 50px;
+                color:$top-heading-color;
+                font-family:Barlow-medium-bold;
             }
         }
     }
-    &-contact-us-form{
+    &__form{
         width:50%;
         display: flex;
         flex-direction:column;
@@ -47,38 +56,45 @@
         background-image: url(../images/contact-us/form.jpg);
         background-size: 100% 100%;
         //height: 636px;
-        &-title{
+        &__title{
             display: flex;
             flex-direction:column;
             padding:10px;
             text-align: left;
-            &-big{
-             @include text-property($size:40px,$font:Barlow-bold);
+            &__big{
+             text-transform: uppercase;
+             font-size: 40px;
+             color:#ffffff;
+             font-family:Barlow-bold;
             }
-            &-small{
+            &__small{
                 padding-top:40px;
-                @include text-property($size:14px,$font:Barlow-regular);
+                text-transform: uppercase;
+                font-size: 14px;
+                color:#ffffff;
+                font-family:Barlow-regular;
                 letter-spacing: 1.5px;
             }
         }
-        &-fileds{
+        &__fileds{
             padding:10px;
-            .form-group{
+            &__form_group{
                 position: relative;
-                .label{
-                    @include text-property($text-transform:none,$color:$about-us-form-label-text,$size:18px
-                    ,$font:Barlow-regular);
+                &__label{
+                    font-size: 18px;
+                    color:$about-us-form-label-text;
+                    font-family:Barlow-regular;
                     position: absolute;
                     top: 40%;
                     left: 5%;
                     letter-spacing: 1.5px;
                     
                 }
-                .label-textarea{
+                &__label_textarea{
                    
                     top: 27%;
                 }
-                .form-control{
+                &__form_control{
                     width: 100%;
                     padding: 5%;
                     margin: 4% 0;
@@ -87,8 +103,8 @@
                     background:$about-us-form-background-color;
                 }
             }
-            .form-btn{
-                .form-btn-submit{
+            &__form_btn{
+                &__submit{
                     margin:4% 0 0 0;
                     @include textButton($background:$text-button-color,$width:30%);
                     border:1px solid $text-button-color;
@@ -99,4 +115,12 @@
             }
         }
     }
+}
+&__googleMap{
+width:100%;
+&__iframe{
+    width: 100%;
+    height:500px;
+}
+}
 }

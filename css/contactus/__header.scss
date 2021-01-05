@@ -1,9 +1,26 @@
-.header{
+.wrapper_contactus__header{
     background-image: url(../images/contact-us/contactus_bg.jpg);
-    &-text{
-        padding:6% 0;
-        &-small-title{
-        text-transform: none;
+    display:flex;
+    flex-direction: column;
+    background-size: 100% 100%;
+    padding-bottom:9%;
+    padding-left:5%;
+    padding-right:5%;
+    &__text{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding:19% 0;
+        &__big_title{
+            padding: 10px 0;
+            text-transform: uppercase;
+            font-size: 72px;
+            color: #ffffff;
+            font-family: Barlow-semi-bold;
+        }
+        &__small_title{
+            font-size: 20px;
+        color: #ffffff;
         font-family:Barlow-regular;
         }
     }

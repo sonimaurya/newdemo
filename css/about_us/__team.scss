@@ -14,8 +14,10 @@
         justify-content: center;
         &__title{
             &__top{
-                @include text-property($size:35px,$color:$primary-text-color
-                ,$font:Barlow-bold);
+            font-size:35px;
+            color:$primary-text-color;
+            font-family:Barlow-bold;
+            text-transform: uppercase;
             }
             &__line{
                @include headingLine;
@@ -24,9 +26,9 @@
         }
         &__para{
             p{
-             @include text-property($text-transform:none,$size:20px,
-             $color:$primary-text-color,$font:'Barlow-medium-bold'
-             );
+             font-size:20px;
+             color:$primary-text-color;
+             font-family:Barlow-medium-bold;
             }
             &__sign_text{
                 padding-top:8%;
@@ -57,10 +59,14 @@
                 padding: 2%;
                 text-align: center;
                 &__title{
-                    @include text-property($text-transform:none,$size:20px,$color:$primary-text-color,$font:Barlow-medium-bold);
+                    font-size:20px;
+                    color:$primary-text-color;
+                    font-family:Barlow-medium-bold;
                 }
                 &__subtitle{
-                    @include text-property($text-transform:none,$size:16px,$color:$about-us-subtitle-color,$font:Barlow-medium-bold);
+                    font-size:16px;
+                    color:$about-us-subtitle-color;
+                    font-family:Barlow-medium-bold;
                 }
             }
         }

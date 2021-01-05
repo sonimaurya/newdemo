@@ -68,6 +68,7 @@
         background-size: cover;
       
         &__text{
+                padding:45% 0;
             &__big_title{
                 font-size:42px;
             }
@@ -175,27 +176,32 @@
 .fa-bars {
 color: $secondary-text-color;
 }
-.contact_us{
-    .header{
-       // background-image: url(../images/contact-us/contactus_bg.jpg);
+.wrapper_contactus{
+    &__header{
         background-size: cover;
+        &__text{
+            padding:38% 0;
+        &__big_title{
+            font-size:42px;
+        }
     }
-    .middle-content{
+    }
+    &__middle_content{
         display: flex;
         flex-direction: column;
-        &-contact-us{
+        &__contact{
             width:100%;
         }
-        &-contact-us-form{
+        &__form{
             width:100%;
-            &-title{
+            &__title{
                 padding:10px 0;
             }
-            &-fileds{
+            &__fileds{
                 padding:0;
             }
-                .form-btn{
-                    .form-btn-submit{
+                &__form_btn{
+                    &__button{
                         width:50%;
                     }
                 }          
@@ -203,29 +209,34 @@ color: $secondary-text-color;
        
     }
   
-    .project-with-us{
-        &-para{
+    &__pro_with_us{
+        &__para{
             display: flex;
             flex-direction: column;
-            .para-text{
+            &__text{
                 width: 100%;
+                text-align: center;
             }
-            .number-button{
+            &__number_box{
                 width: 100%;
                 justify-content: center;
-                .project-with-us-button{
+                &__button{
                     width: 50%;
                 }
             }
         }
-        .scroll-btn{
-            top: 90%;
-        }
+        
     }
 }
 .contact_wrapper{
     &__header{
         background-size: cover;
+        &__text{
+            padding:38% 10%;
+             &__big_title{
+            font-size:42px;
+        }
+      }
     }
     &__team{
         display: flex;
@@ -596,16 +607,20 @@ width:60%;
  }
   .lists{
       .drop-heading{
-        @include text-property($size:16px,$font:Barlow-bold
-        ,$color:$secondary-text-color) ;
+        text-transform: uppercase;
+        font-size: 16px;
+        color:$secondary-text-color;
+        font-family:Barlow-bold;
         padding: 10% 0 10% 5%;
       }
       padding-bottom:10%;
       .ul{
           list-style-type: none;
           .li{
-            @include text-property($size:16px,$font:Barlow-regular
-            ,$color:$top-heading-color) ;
+            text-transform: uppercase;
+            font-size: 16px;
+            color:$top-heading-color;
+            font-family:Barlow-regular;
             padding: 8% 6% 8% 5%;
             .a{
                 text-decoration: none;
@@ -664,6 +679,11 @@ width:60%;
     }
         }
     }
+    .wrapper_contactus{
+        &__pro_with_us__para__number_box__button{
+            width:30%;
+        }
+    }
    
 }
 @media screen and (min-width:540px) and (max-width:540px){
@@ -690,6 +710,14 @@ width:60%;
             &__images{
                display: flex;
             }
+        }
+    }
+    .wrapper_contactus{
+        &__pro_with_us__para__number_box__button{
+            width:30%;
+        }
+        &__pro_with_us__para__text{
+            text-align: center;
         }
     }
     .services2{
@@ -785,6 +813,11 @@ width:60%;
         }
 
     }
+    .wrapper_contactus{
+        &__pro_with_us__para__text{
+            text-align: center;
+        }
+    }
     .services1{
         .wrapper-pavement-management{
             display: flex;
@@ -867,20 +900,23 @@ width:60%;
 
 
 @media screen and (min-width:768px) and (max-width:768px){
-.contact-us{
-    .middle-content{
-        &-contact-us-form{
-            .form-btn{
-                .form-btn-submit{
+.wrapper_contactus{
+    &__middle_content{
+        &__form{
+            &__btn{
+                &__submit{
                     width:30%;
                 }
             } 
         }
     }
-    .project-with-us{
-        &-para{
-            .number-button{
-                .project-with-us-button{
+    &__pro_with_us{
+        &__para{
+            &__text{
+                text-align: center;
+            }
+            &__number_box{
+                &__button{
                     width: 30%;
                 }
             }
@@ -952,15 +988,15 @@ width:60%;
             margin-top: 30%;
         }
     }
-.about-us{
-    .team{
-        &-text{
+.contact_wrapper{
+    &__team{
+        &__text{
             padding:2%;
         }
     }
-    .background{
-        &-cards{
-            &-body{
+    &__background{
+        &__cards{
+            &__body{
                 padding:2% 3%;
             }
         }

@@ -66,9 +66,11 @@
                 display: flex;
                 margin:10px;
                 &__link{
-                    @include text-property($size:18px,
-                    $color:$menu-text-color,$font:Barlow-medium-bold);
+                    font-size:18px;
+                    color:$menu-text-color;
+                    font-family:Barlow-medium-bold;
                     text-decoration: none;
+                    text-transform: uppercase;
                     &:hover{
                     font-weight: 700;   
                     color: $menu-text;                     
@@ -111,10 +113,7 @@
         color: #ffffff;
         font-family: Barlow-medium-bold;
        }
-       &-button{
-           margin-top: 52px;
-           @include textButton();
-       }
+      
     }
 }
 

@@ -9,8 +9,10 @@
             padding-top: 30px;
             text-align: center;
             &__top{
-                @include text-property($size:40px,$color:$text-button-color
-                ,$font:Barlow-semi-bold);
+                font-size:40px;
+                color:$text-button-color;
+                font-family:Barlow-semi-bold;
+                text-transform: uppercase;
             }
             &__line{
                @include headingLine($background:$secondary-text-color);
@@ -21,8 +23,9 @@
         &__para{
             text-align: center;
             &__text{
-            @include text-property($size:18px,$text-transform:unset,
-            $font:Barlow-regular);
+            font-size:18px;
+                color:#ffffff;
+                font-family:Barlow-regular;
             line-height: 2;
                       }
             width: 100%;
@@ -37,8 +40,10 @@
                     }
                     &__text{
                         text-align: center;
-                        @include text-property($size:18px,$text-transform:unset,
-                        $font:Barlow-regular);
+                        font-size:18px;
+                        color:#ffffff;
+                        font-family:Barlow-regular;
+                        text-transform: uppercase;
                         line-height: 2;
                     }
                 }

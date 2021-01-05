@@ -6,8 +6,10 @@
         text-align: center;
         padding:2%;
         &__top{
-            @include text-property($size:35px,$color:$top-heading-color
-            ,$font:Barlow-bold);
+            font-size:35px;
+            color:$top-heading-color;
+            font-family:Barlow-bold;
+            text-transform: uppercase;
             
         }
         &__line{
@@ -69,16 +71,17 @@
                      padding:5%;
                      margin:2% 2%;
                      border-radius: 5px;
-                     @include text-property($text-transform:none,$size:19px
-                     ,$color:$secondary-text-color);
+                     font-size:19px;
+                     color:$secondary-text-color;
                      font-family: 'Barlow-medium-bold';
                 }
                 &__text{
                     text-align:left;
                     padding:5%;
                     margin:0 2%;
-                    @include text-property($text-transform:none,$size:18px,
-                    $font:Barlow-medium-bold);
+                    font-size:18px;
+                    color:$top-heading-color;
+                    font-family:Barlow-medium-bold;
                     ul{
                         list-style-image: url(../images/icons/bullet.png);
                     }
