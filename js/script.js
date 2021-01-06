@@ -53,3 +53,31 @@ $(window).scroll(function() {
       $('#back2Top').fadeOut();
   }
 });
+
+
+$('input[type=text]').on('focus', function() {
+  $("input[type=text]").prev().hide();
+});
+$('input[type=text]').on('blur', function() {
+if($('input[type=text]').val().length==0){
+  $("input[type=text]").prev().show();
+}
+  
+});
+
+$('input[type=email]').on('focus', function() {
+$("input[type=email]").prev().hide();
+});
+$('input[type=email]').on('blur', function() {
+if($('input[type=email]').val().length==0){
+$("input[type=email]").prev().show();
+}
+});
+$('textarea').on('focus', function() {
+$("textarea").prev().hide();
+});
+$('textarea').on('blur', function() {
+if($('textarea').val().length==0){
+$("textarea").prev().show();
+}
+});

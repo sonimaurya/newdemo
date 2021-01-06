@@ -2602,4 +2602,8 @@
     padding: 1% 9%;
   }
 }
+
+input[type=email], input[type=text], textarea {
+  color: #ffffff;
+}
 /*# sourceMappingURL=main.css.map */
