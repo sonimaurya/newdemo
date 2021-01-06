@@ -9,18 +9,19 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
-  <body>      	<!-- menu section -->
+  <body>
+    <!-- menu section -->
     <div class="nav">
       <!-- header logo -->
       <div class="nav__logo">
-        <img src="images/home/Services.png">
+        <img src="images/home/Services.png" />
       </div>
       <!-- end logo -->
       <!-- header nav -->
       <div class="nav__menu">
         <!-- mobile menu -->
-        <div class="nav__menu__mobile_menu" >
-          <i class="fa fa-bars " onclick="display_menu()"></i>
+        <div class="nav__menu__mobile_menu">
+          <i class="fa fa-bars" onclick="display_menu()"></i>
           <ul class="nav__menu__mobile_menu__list">
             <li class="active">
               <a href="index.html">Home</a>
@@ -31,24 +32,39 @@
             <li id="dropdown-mobile">
               <a href="#">Services & Products</a>
               <div class="nav__menu__mobile_menu__list__items__dropdown">
-                <div class="nav__menu__mobile_menu__list__items__dropdown__list">
-                  <a class="nav__menu__mobile_menu__list__items__dropdown__list__heading">Services</a>
-                  <ul class="nav__menu__mobile_menu__list__items__dropdown__list__sublist"><li><a href="services.html">Pavement</a></li>
+                <div
+                  class="nav__menu__mobile_menu__list__items__dropdown__list"
+                >
+                  <a
+                    class="nav__menu__mobile_menu__list__items__dropdown__list__heading"
+                    >Services</a
+                  >
+                  <ul
+                    class="nav__menu__mobile_menu__list__items__dropdown__list__sublist"
+                  >
+                    <li><a href="services.html">Pavement</a></li>
                     <li><a href="services2.html">APDIS</a></li>
                     <li><a href="services3.html">PDAS</a></li>
                   </ul>
-                  </div>
-                  <div class="nav__menu__mobile_menu__list__items__dropdown__list">
-                    <a  class="nav__menu__mobile_menu__list__items__dropdown__list__heading">Products</a>
-                    <ul class="nav__menu__mobile_menu__list__items__dropdown__list__sublist">
-                      <li><a href="services4.html">DAD</a></li>
-                      <li><a href="services5.html">ASCIS</a></li>
-                      <li><a href="services6.html">MPVC</a></li>
-                    </ul>
-                    </div>
                 </div>
+                <div
+                  class="nav__menu__mobile_menu__list__items__dropdown__list"
+                >
+                  <a
+                    class="nav__menu__mobile_menu__list__items__dropdown__list__heading"
+                    >Products</a
+                  >
+                  <ul
+                    class="nav__menu__mobile_menu__list__items__dropdown__list__sublist"
+                  >
+                    <li><a href="services4.html">DAD</a></li>
+                    <li><a href="services5.html">ASCIS</a></li>
+                    <li><a href="services6.html">MPVC</a></li>
+                  </ul>
+                </div>
+              </div>
             </li>
-            
+
             <li>
               <a href="contact.html">Contact Us</a>
             </li>
@@ -58,35 +74,47 @@
         <!-- desktop menu -->
         <ul class="nav__menu__list">
           <li class="nav__menu__list__items">
-            <a href="index.html" class="nav__menu__list__items__link active">Home</a>
+            <a href="index.html" class="nav__menu__list__items__link active"
+              >Home</a
+            >
           </li>
           <li class="nav__menu__list__items">
-            <a href="about-us.html" class="nav__menu__list__items__link">About Us</a>
+            <a href="about-us.html" class="nav__menu__list__items__link"
+              >About Us</a
+            >
           </li>
-          <li class="nav__menu__list__items"  id="dropdown">
+          <li class="nav__menu__list__items" id="dropdown">
             <a href="#" class="nav__menu__list__items__link">
-              Services & Products</a>
-              <div class="nav__menu__list__items__dropdown">
-                <div class="nav__menu__list__items__dropdown__list">
-                  <h3 class="nav__menu__list__items__dropdown__list__heading">Services</h3>
-                  <ul class="nav__menu__list__items__dropdown__list__sublist"><li><a href="services.html">Services</a></li>
-                    <li><a href="services2.html">APDIS</a></li>
-                    <li><a href="services3.html">PDAS</a></li>
-                  </ul>
-                  </div>
-                  <div class="nav__menu__list__items__dropdown__list">
-                    <h3  class="nav__menu__list__items__dropdown__list__heading">Products</h3>
-                    <ul class="nav__menu__list__items__dropdown__list__sublist">
-                      <li><a href="services4.html">DAD</a></li>
-                      <li><a href="services5.html">ASCIS</a></li>
-                      <li><a href="services6.html">MPVC</a></li>
-                    </ul>
-                    </div>
-                </div>
+              Services & Products</a
+            >
+            <div class="nav__menu__list__items__dropdown">
+              <div class="nav__menu__list__items__dropdown__list">
+                <h3 class="nav__menu__list__items__dropdown__list__heading">
+                  Services
+                </h3>
+                <ul class="nav__menu__list__items__dropdown__list__sublist">
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="services2.html">APDIS</a></li>
+                  <li><a href="services3.html">PDAS</a></li>
+                </ul>
+              </div>
+              <div class="nav__menu__list__items__dropdown__list">
+                <h3 class="nav__menu__list__items__dropdown__list__heading">
+                  Products
+                </h3>
+                <ul class="nav__menu__list__items__dropdown__list__sublist">
+                  <li><a href="services4.html">DAD</a></li>
+                  <li><a href="services5.html">ASCIS</a></li>
+                  <li><a href="services6.html">MPVC</a></li>
+                </ul>
+              </div>
+            </div>
           </li>
-            
+
           <li class="nav__menu__list__items">
-            <a href="contact.html" class="nav__menu__list__items__link">Contact Us</a>
+            <a href="contact.html" class="nav__menu__list__items__link"
+              >Contact Us</a
+            >
           </li>
         </ul>
         <!-- end desktop menu -->
@@ -94,121 +122,132 @@
       <!-- end nav -->
     </div>
     <!-- end menu -->
-      <div class="wrapper_services">
-        <section class="wrapper_services__header">
-          <div class="wrapper_services__header__text">
-            <div class="wrapper_services__header__text__big_title">Pavement Data Analytics Service (PDAS) </div>
+    <div class="wrapper_services">
+      <section class="wrapper_services__header">
+        <div class="wrapper_services__header__text">
+          <div class="wrapper_services__header__text__big_title">
+            Pavement Data Analytics Service (PDAS)
           </div>
-        </section>
-        <section class="wrapper_services__sidebar">
-          <div class="wrapper_services__sidebar__list">
-            <div class="wrapper_services__sidebar__list__heading">            
-                PAVEMENTS 
-            </div>
-            <div class="wrapper_services__sidebar__list__sublist">
-              <ul>
-                <li >
-                  <a href="services.html"> smart pavement management sysytem</a>
-                </li>
-                <li>
-                  <a href="services3.html"> Automated Pavement Distress Identification System (APDIS) </a>
-                </li>
-                <li  class="wrapper_services__sidebar__list__sublist--active">
-                  <a href="services4.html">Pavement Data Analytics Service (PDAS)  </a>
-                </li>
-              </ul>
-              </div>
+        </div>
+      </section>
+      <section class="wrapper_services__sidebar">
+        <div class="wrapper_services__sidebar__list">
+          <div class="wrapper_services__sidebar__list__heading">PAVEMENTS</div>
+          <div class="wrapper_services__sidebar__list__sublist">
+            <ul>
+              <li>
+                <a href="services.html"> smart pavement management sysytem</a>
+              </li>
+              <li>
+                <a href="services3.html">
+                  Automated Pavement Distress Identification System (APDIS)
+                </a>
+              </li>
+              <li class="wrapper_services__sidebar__list__sublist--active">
+                <a href="services4.html"
+                  >Pavement Data Analytics Service (PDAS)
+                </a>
+              </li>
+            </ul>
           </div>
-          <div class="wrapper_services__sidebar__list">
-            <div class="wrapper_services__sidebar__list__heading">           
-                TRAFFIC 
-            </div>
-            <div class="wrapper_services__sidebar__list__sublist">
-              <ul>
-                <li>
-                  <a href="services.html">  Drive Assisting Delineators (DAD) </a>
-                </li>
-                
-              </ul>
-              </div>
+        </div>
+        <div class="wrapper_services__sidebar__list">
+          <div class="wrapper_services__sidebar__list__heading">TRAFFIC</div>
+          <div class="wrapper_services__sidebar__list__sublist">
+            <ul>
+              <li>
+                <a href="services.html"> Drive Assisting Delineators (DAD) </a>
+              </li>
+            </ul>
           </div>
-          <div class="wrapper_services__sidebar__list">
-            <div class="wrapper_services__sidebar__list__heading">
-                BRIDGES 
-            </div>
-            <div class="wrapper_services__sidebar__list__sublist">
-              <ul>
-                <li>
-                  <a href="services.html">  Automated Stay-Cable Inspection System (ASCIS) </a>
-                </li>
-                
-              </ul>
-              </div>
+        </div>
+        <div class="wrapper_services__sidebar__list">
+          <div class="wrapper_services__sidebar__list__heading">BRIDGES</div>
+          <div class="wrapper_services__sidebar__list__sublist">
+            <ul>
+              <li>
+                <a href="services.html">
+                  Automated Stay-Cable Inspection System (ASCIS)
+                </a>
+              </li>
+            </ul>
           </div>
-          <div class="wrapper_services__sidebar__list">
-            <div class="wrapper_services__sidebar__list__heading">
-                TUNNELS 
-            </div>
-            <div class="wrapper_services__sidebar__list__sublist">
-              <ul>
-                <li>
-                  <a href="services.html"> Model-Based Predictive Ventilation Control System (MPVC) </a>
-                </li>
-                
-              </ul>
-              </div>
+        </div>
+        <div class="wrapper_services__sidebar__list">
+          <div class="wrapper_services__sidebar__list__heading">TUNNELS</div>
+          <div class="wrapper_services__sidebar__list__sublist">
+            <ul>
+              <li>
+                <a href="services.html">
+                  Model-Based Predictive Ventilation Control System (MPVC)
+                </a>
+              </li>
+            </ul>
           </div>
-         </section>
-       <section class="wrapper_services__content"> 
-         <section class="wrapper_services__content__page">
-           <section class="wrapper_services__content__page__top_text">
-            <p>Recurring traffic congestion tends to occur at sag section 
-                (transition from downhill to uphill) and the entrance of 
-                tunnels because the vehicle speed decreases without drivers'
-                 notice.</p>
-                 <p> To improve the unintended speed reduction in those
-                  road sections, we have developed a measure to influence on
-                   drivers' perception with active controlled connected delineators,
-                    called "Drive Assisting Delineators (DAD)". 
+        </div>
+      </section>
+      <section class="wrapper_services__content">
+        <section class="wrapper_services__content__page">
+          <section class="wrapper_services__content__page__top_text">
+            <p>
+              Recurring traffic congestion tends to occur at sag section
+              (transition from downhill to uphill) and the entrance of tunnels
+              because the vehicle speed decreases without drivers' notice.
             </p>
-           </section>
-           <section class="wrapper_services__content__page__services4_images">
-               <div class="wrapper_services__content__page__services4_images__box">
-             <img src="images/services/4.jpg">
+            <p>
+              To improve the unintended speed reduction in those road sections,
+              we have developed a measure to influence on drivers' perception
+              with active controlled connected delineators, called "Drive
+              Assisting Delineators (DAD)".
+            </p>
+          </section>
+          <section class="wrapper_services__content__page__services4_images">
+            <div class="wrapper_services__content__page__services4_images__box">
+              <img src="images/services/4.jpg" />
             </div>
             <div class="wrapper_services__content__page__services4_images__box">
-             <img src="images/services/3.jpg">
+              <img src="images/services/3.jpg" />
             </div>
-           </section>
-           <section class="wrapper_services__content__page__unique_feature">
-             <div class="wrapper_services__content__page__unique_feature__box">
-               <div class="wrapper_services__content__page__unique_feature__box__heading">Features</div>
-               <div class="wrapper_services__content__page__unique_feature__box__text_points">
-                 <ul>
-                   <li>An affordable solution to improve the traffic capacity in bottle necks like sag section and the entrance of tunnels. </li>
-                   <li> Easy setup on the guard rail poles.</li>
-                   <li> Environmental-friendly and durable LED lights.  </li>
-                 </ul>
-               </div>
-             </div>
-           </section>
-         </section>
-     
-    </section>
-     
+          </section>
+          <section class="wrapper_services__content__page__unique_feature">
+            <div class="wrapper_services__content__page__unique_feature__box">
+              <div
+                class="wrapper_services__content__page__unique_feature__box__heading"
+              >
+                Features
+              </div>
+              <div
+                class="wrapper_services__content__page__unique_feature__box__text_points"
+              >
+                <ul>
+                  <li>
+                    An affordable solution to improve the traffic capacity in
+                    bottle necks like sag section and the entrance of tunnels.
+                  </li>
+                  <li>Easy setup on the guard rail poles.</li>
+                  <li>Environmental-friendly and durable LED lights.</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </section>
+      </section>
     </div>
-                <!-- footer section -->
-<section class="footer footer--margin_left">
-	<img src="images/home/Services.png" class="footer__logo">
-	<div class="footer__privacy_text"><span>Privacy Policy</span></div>
-	<div class="footer__copyright_text">Copyright &copy; Central Nippon Expressway Company Limited All Rights Reserved.</div>
-	<!-- scroll button -->
-	<div class="footer__scroll_button" id="back2Top">
-		<img src="images/icons/top.png">
-	  </div>
-	   <!-- end button -->
-</section>
-<!-- end section -->
+    <!-- footer section -->
+    <section class="footer footer--margin_left">
+      <img src="images/home/Services.png" class="footer__logo" />
+      <div class="footer__privacy_text"><span>Privacy Policy</span></div>
+      <div class="footer__copyright_text">
+        Copyright &copy; Central Nippon Expressway Company Limited All Rights
+        Reserved.
+      </div>
+      <!-- scroll button -->
+      <div class="footer__scroll_button" id="back2Top">
+        <img src="images/icons/top.png" />
+      </div>
+      <!-- end button -->
+    </section>
+    <!-- end section -->
     <script src="js/jquery.min.js"></script>
     <script src="js/script.js"></script>
   </body>
