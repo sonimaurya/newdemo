@@ -8,8 +8,9 @@
             &__box{
                 width:40%;
                 &__text{
-                    @include text-property($text-transform:none,$size:20px,$font:barlow-regular
-                    ,$color:$top-heading-color);
+                    font-size:20px;
+                    font-family:barlow-regular ;
+                    color:$top-heading-color;
                      padding:5% 0; 
                      text-align: center;
                      letter-spacing: 1.3px;;
@@ -42,9 +43,11 @@
             border-radius: 8px;
             &__text{
                 width:50%;
-              @include text-property($font:Barlow-bold,$color:$top-heading-color
-              ,$text-transform:capitalize,$size:72px);
+              text-transform:capitalize;
+              font-size:72px;
               text-align: center;
+              font-family:Barlow-bold;
+              color:$top-heading-color;
             }
             &__image{
                 width:50%;
@@ -57,9 +60,11 @@
                     border:1px solid grey;
                     border-radius: 8px;
                     &__text{
-                        @include text-property($font:Barlow-medium-bold,$color:$top-heading-color
-                           ,$size:24px); 
+                           font-family:Barlow-medium-bold;
+                           color:$top-heading-color;
                            text-align: center;
+                           font-size:24px;
+                           text-transform: uppercase;
                     }
                 }
                 &__r{
@@ -68,9 +73,11 @@
                     border:1px solid grey;
                     border-radius: 8px;
                     &__text{
-                        @include text-property($font:Barlow-medium-bold,$color:$top-heading-color
-                           ,$size:24px); 
-                           text-align: center;
+                        font-family:Barlow-medium-bold;
+                        color:$top-heading-color;
+                        text-align: center;
+                        font-size:24px;
+                        text-transform: uppercase;
                     }
                 }
             }
