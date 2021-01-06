@@ -54,11 +54,11 @@ flex-direction: column;
                 letter-spacing: 1px;
             }
         }
-        &__box{
-            display: flex;
-            justify-content: space-between;
-            @import '__aboutus_card.scss';
-        }
+        // &__box{
+        //     display: flex;
+        //     justify-content: space-between;
+        //     @import '__aboutus_card.scss';
+        // }
         
     }
     &__products{

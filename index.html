@@ -1,275 +1,374 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Slick material design</title>
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<meta content="width=device-width, initial-scale=1" name="viewport" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-	<!-- menu section -->
-	<div class="nav">
-		<!-- header logo -->
-		<div class="nav__logo">
-			<img src="images/home/Services.png">
-		</div>
-		<!-- end logo -->
-		<!-- header nav -->
-		<div class="nav__menu">
-			<!-- mobile menu -->
-			<div class="nav__menu__mobile_menu" >
-				<i class="fa fa-bars " onclick="display_menu()"></i>
-				<ul class="nav__menu__mobile_menu__list">
-					<li class="active">
-						<a href="index.html">Home</a>
-					</li>
-					<li>
-						<a href="about-us.html">About Us</a>
-					</li>
-					<li id="dropdown-mobile">
-						<a href="#">Services & Products</a>
-						<div class="nav__menu__mobile_menu__list__items__dropdown">
-							<div class="nav__menu__mobile_menu__list__items__dropdown__list">
-							  <a class="nav__menu__mobile_menu__list__items__dropdown__list__heading">Services</a>
-							  <ul class="nav__menu__mobile_menu__list__items__dropdown__list__sublist"><li><a href="services.html">Pavement</a></li>
-								  <li><a href="services2.html">APDIS</a></li>
-								  <li><a href="services3.html">PDAS</a></li>
-							  </ul>
-							  </div>
-							  <div class="nav__menu__mobile_menu__list__items__dropdown__list">
-								  <a  class="nav__menu__mobile_menu__list__items__dropdown__list__heading">Products</a>
-								  <ul class="nav__menu__mobile_menu__list__items__dropdown__list__sublist">
-									  <li><a href="services4.html">DAD</a></li>
-									  <li><a href="services5.html">ASCIS</a></li>
-									  <li><a href="services6.html">MPVC</a></li>
-								  </ul>
-								  </div>
-						  </div>
-					</li>
-					
-					<li>
-						<a href="contact.html">Contact Us</a>
-					</li>
-				</ul>
-			</div>
-			<!-- end mobile menu -->
-			<!-- desktop menu -->
-			<ul class="nav__menu__list">
-				<li class="nav__menu__list__items">
-					<a href="index.html" class="nav__menu__list__items__link active">Home</a>
-				</li>
-				<li class="nav__menu__list__items">
-					<a href="about-us.html" class="nav__menu__list__items__link">About Us</a>
-				</li>
-				<li class="nav__menu__list__items"  id="dropdown">
-					<a href="#" class="nav__menu__list__items__link">
-						Services & Products</a>
-						<div class="nav__menu__list__items__dropdown">
-							<div class="nav__menu__list__items__dropdown__list">
-							  <h3 class="nav__menu__list__items__dropdown__list__heading">Services</h3>
-							  <ul class="nav__menu__list__items__dropdown__list__sublist"><li><a href="services.html">Services</a></li>
-								  <li><a href="services2.html">APDIS</a></li>
-								  <li><a href="services3.html">PDAS</a></li>
-							  </ul>
-							  </div>
-							  <div class="nav__menu__list__items__dropdown__list">
-								  <h3  class="nav__menu__list__items__dropdown__list__heading">Products</h3>
-								  <ul class="nav__menu__list__items__dropdown__list__sublist">
-									  <li><a href="services4.html">DAD</a></li>
-									  <li><a href="services5.html">ASCIS</a></li>
-									  <li><a href="services6.html">MPVC</a></li>
-								  </ul>
-								  </div>
-						  </div>
-				</li>
-					
-				<li class="nav__menu__list__items">
-					<a href="contact.html" class="nav__menu__list__items__link">Contact Us</a>
-				</li>
-			</ul>
-			<!-- end desktop menu -->
-		</div>
-		<!-- end nav -->
-	</div>
-	<!-- end menu -->
-<div class="wrapper">
-	<!-- header section -->
-	<section class="wrapper__header">
-	
-		<!-- header text -->
-		<div class="wrapper__header__text">
-			<div class="wrapper__header__text__big_title">NEXCO HIGHWAY SOLUTIONS OF AMERICA, INC. </div>
-			<div class="wrapper__header__text__small_title">A NEXCO-Central Group</div>
-				 <!-- <button class="header-text-button">KNOW MORE</button> -->
-		</div>
-		<!-- end header text -->
-	</section>
-<!-- end section -->
-<!-- services section -->
-	<section class="wrapper__services">
-		<!-- about us section -->
-            <div class="wrapper__services__about_us">
-				<!-- about us top -->
-				<div class=wrapper__services__about_us__top">
-					<h1 class="wrapper__services__about_us__top__heading">ABOUT US</h1>
-					<div class="wrapper__services__about_us__top__line"></div>
-				</div>
-				<!-- end top -->
-			       <div class="wrapper__services__about_us__para">
-					<p class="wrapper__services__about_us__para__text">NEXCO Highway Solutions of America, Inc. (NHSA) "a NEXCO-Central Group" provides road operators and engineering companies with the innovative road and traffic management solutions taking advantage of highway business history over 60 years in Japan. 
-					</p>
-					<a href="#" class="wrapper__services__about_us__para__know ">Know More</a>   
-				</div>
-			</div>
-			<!-- end about us section -->
-			<!-- services and products section -->
-			<div class="wrapper__services__products">
-				<!-- heading -->
-				<div class="wrapper__services__products__heading">
-					<h1 class="wrapper__services__products__heading__top">SERVICES & PRODUCTS</h1>
-					<div class="wrapper__services__products__heading__top__line"></div>
-				</div>
-				<!-- end heading -->
-				<!-- box -->
-				<div class="wrapper__services__products__box">
-					<!-- box left -->
-					<div class="wrapper__services__products__box__l">
-						<div class="wrapper__services__products__box__l__para">
-							<p class="wrapper__services__products__box__l__para__text">Our engineering services, backed by decades of
-								 practical experience, help road operators and engineering 
-								 companies that seek to manage their roadways
-								 effectively by reducing life-cycle costs and
-								  increasing performances. </p>
-								  <button class="wrapper__services__products__box__l__para__button">KNOW MORE</button>
-						</div>
-						
-					</div>
-					<!-- end box left -->
-					<!-- box right -->
-					<div class="wrapper__services__products__box__r">
-						<div class="wrapper__services__products__box__r__slideshow">
-							<div class="wrapper__services__products__box__r__slideshow__slides wrapper__services__products__box__r__slideshow__slides--fade">
-								<div class="wrapper__services__products__box__r__slideshow__slides__shadow"></div>
-								<img src="images/home/service_1.jpg" class="wrapper__services__products__box__r__slideshow__slides__shadow__img">
-							  </div>
-							  <div class="wrapper__services__products__box__r__slideshow__slides wrapper__services__products__box__r__slideshow__slides--fade">
-								<div class="wrapper__services__products__box__r__slideshow__slides__shadow"></div>
-								<img src="images/home/service_1.jpg" class="wrapper__services__products__box__r__slideshow__slides__shadow__img">
-							  </div>
-							  <div class="wrapper__services__products__box__r__slideshow__slides wrapper__services__products__box__r__slideshow__slides--fade">
-								<div class="wrapper__services__products__box__r__slideshow__slides__shadow"></div>
-								<img src="images/home/service_1.jpg" class="wrapper__services__products__box__r__slideshow__slides__shadow__img">
-							  </div>
-						</div>
-						<div class="wrapper__services__products__box__r__slideshow_dot_box">
-						<span class="wrapper__services__products__box__r__slideshow_dot_box__dot" onclick="currentSlide(1)"></span> 
-						<span class="wrapper__services__products__box__r__slideshow_dot_box__dot" onclick="currentSlide(2)"></span> 
-						<span class="wrapper__services__products__box__r__slideshow_dot_box__dot" onclick="currentSlide(3)"></span> 
-						</div>
-					</div>
-					<!-- end box right -->
-				</div>
-				<!-- end box -->
-			</div>
-			<!-- end services and products section -->
-	</section>
-<!-- end services section -->
-<!-- news section -->
-<section class="wrapper__news">
-	<!-- top heading -->
-	<div class="wrapper__news__title">
-		<div class="wrapper__news__title__top">News</div>
-		<div class="wrapper__news__title__line"></div>
-	</div>
-	<!-- end top heading -->
-	<!-- news description -->
-	<div class="wrapper__news__description">
-		<div class="wrapper__news__description__cards">
-			<div class="wrapper__news__description__cards__t">JUNE 14, 2019 </div>
-			<div class="wrapper__news__description__cards__d">We open a local office in Irving, TX (Jan 1, 2020). </div>
-		</div>
-		
-		<div class="wrapper__news__description__cards">
-			<div class="wrapper__news__description__cards__t">APRIL 4, 2019 </div>
-			<div class="wrapper__news__description__cards__d">Thank you for visiting our booth at IBTTA Annual Technology Summit ! </div>
-		</div>
-	</div>
-	<div class="wrapper__news__description">
-		<div class="wrapper__news__description__cards">
-			<div class="wrapper__news__description__cards__t">JANUARY 13, 2019</div>
-			<div class="wrapper__news__description__cards__d">We're going to run a booth at the
-				 TRB exhibition (Jan XX, 2020)  </div>
-		</div>
-		
-		<div class="wrapper__news__description__cards">
-			<div class="wrapper__news__description__cards__t">JUNE 5, 2017 </div>
-			<div class="wrapper__news__description__cards__d">Conclusion of the strategic Partnership with FECON  </div>
-		</div>
-	</div>
-	<!-- end news description -->
-</section>
-<!-- end news section -->
-<!-- get in touch section -->
-	<section class="wrapper__getintouch">
-		<!-- top heading -->
-		<div class="wrapper__getintouch__heading">
-			<div class="wrapper__getintouch__heading__top">get in touch</div>
-			<div class="wrapper__getintouch__line"></div>
-		</div>
-		<!-- end heading -->
-		<!-- get in touch content -->
-		  <div class="wrapper__getintouch__para">
-			<div class="wrapper__getintouch__para__text">You need more information? Check what other persons are saying about our product. They are very happy with their purchase. </div>
-			<div class="wrapper__getintouch__para__contact_us">
-				<div class="wrapper__getintouch__para__contact_us__address">
-					<div class="wrapper__getintouch__para__contact_us__address__icon">
-                    <img src="images/home/address.png">
-					</div>
-					<div class="wrapper__getintouch__para__contact_us__address__text">
-						Bld Mihail Kogalniceanu, nr. 8, 7652 <br>
-					Bucharest, USA
-					</div>
-					 </div>
-					 <div class="wrapper__getintouch__para__contact_us__address">
-						<div class="wrapper__getintouch__para__contact_us__address__icon">
-							<img src="images/home/mail.png">
-							</div>
-							<div class="wrapper__getintouch__para__contact_us__address__text">
-						ask@cnexo.com
-					   </div>
-					</div>
-					<div class="wrapper__getintouch__para__contact_us__address">
-						<div class="wrapper__getintouch__para__contact_us__address__icon">
-							<img src="images/home/call.png">
-							</div>
-							<div class="wrapper__getintouch__para__contact_us__address__text">
-						Michael Jordan +40 762 321 762 <br>
-					   Mon - Fri, 8:00-22:00 
-					   </div>
-					</div>
-					
-			</div>
-			<button class="wrapper__getintouch__para__text_button">CONTACT US</button>
-		</div>
-		<!-- end content -->
-	</section>
-	<!-- end section -->
-	
-</div>
-<!-- footer section -->
-<section class="footer">
-	<img src="images/home/Services.png" class="footer__logo">
-	<div class="footer__privacy_text"><span>Privacy Policy</span></div>
-	<div class="footer__copyright_text">Copyright &copy; Central Nippon Expressway Company Limited All Rights Reserved.</div>
-	<!-- scroll button -->
-	<div class="footer__scroll_button" id="back2Top">
-		<img src="images/icons/top.png">
-	  </div>
-	   <!-- end button -->
-</section>
-<!-- end section -->
-<script src="js/jquery.min.js"></script>
-<script src="js/script.js"></script>
-<script src="js/slideshow.js"></script>
-</body>
+  <head>
+    <title>Slick material design</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- menu section -->
+    <div class="nav">
+      <!-- header logo -->
+      <div class="nav__logo">
+        <img src="images/home/Services.png" />
+      </div>
+      <!-- end logo -->
+      <!-- header nav -->
+      <div class="nav__menu">
+        <!-- mobile menu -->
+        <div class="nav__menu__mobile_menu">
+          <i class="fa fa-bars" onclick="display_menu()"></i>
+          <ul class="nav__menu__mobile_menu__list">
+            <li class="nav__menu__mobile_menu__list__active">
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="about-us.html">About Us</a>
+            </li>
+            <li id="dropdown-mobile">
+              <a href="#">Services & Products</a>
+              <div class="nav__menu__mobile_menu__list__items__dropdown">
+                <div
+                  class="nav__menu__mobile_menu__list__items__dropdown__list"
+                >
+                  <a
+                    class="nav__menu__mobile_menu__list__items__dropdown__list__heading"
+                    id="services"
+                    >Services</a
+                  >
+                  <ul
+                    class="nav__menu__mobile_menu__list__items__dropdown__list__sublist"
+                    id="services_sublist"
+                  >
+                    <li><a href="services.html">Pavement</a></li>
+                    <li><a href="services2.html">APDIS</a></li>
+                    <li><a href="services3.html">PDAS</a></li>
+                  </ul>
+                </div>
+                <div
+                  class="nav__menu__mobile_menu__list__items__dropdown__list"
+                >
+                  <a
+                    class="nav__menu__mobile_menu__list__items__dropdown__list__heading"
+                    id="products"
+                    >Products</a
+                  >
+                  <ul
+                    class="nav__menu__mobile_menu__list__items__dropdown__list__sublist"
+                    id="products_sublist"
+                  >
+                    <li><a href="services4.html">DAD</a></li>
+                    <li><a href="services5.html">ASCIS</a></li>
+                    <li><a href="services6.html">MPVC</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <!-- end mobile menu -->
+        <!-- desktop menu -->
+        <ul class="nav__menu__list">
+          <li class="nav__menu__list__items">
+            <a
+              href="index.html"
+              class="nav__menu__list__items__link nav__menu__list__items__link--active"
+              >Home</a
+            >
+          </li>
+          <li class="nav__menu__list__items">
+            <a href="about-us.html" class="nav__menu__list__items__link"
+              >About Us</a
+            >
+          </li>
+          <li class="nav__menu__list__items" id="dropdown">
+            <a href="#" class="nav__menu__list__items__link">
+              Services & Products</a
+            >
+            <div class="nav__menu__list__items__dropdown">
+              <div class="nav__menu__list__items__dropdown__list">
+                <h3 class="nav__menu__list__items__dropdown__list__heading">
+                  Services
+                </h3>
+                <ul class="nav__menu__list__items__dropdown__list__sublist">
+                  <li><a href="services.html">Pavement</a></li>
+                  <li><a href="services2.html">APDIS</a></li>
+                  <li><a href="services3.html">PDAS</a></li>
+                </ul>
+              </div>
+              <div class="nav__menu__list__items__dropdown__list">
+                <h3 class="nav__menu__list__items__dropdown__list__heading">
+                  Products
+                </h3>
+                <ul class="nav__menu__list__items__dropdown__list__sublist">
+                  <li><a href="services4.html">DAD</a></li>
+                  <li><a href="services5.html">ASCIS</a></li>
+                  <li><a href="services6.html">MPVC</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="nav__menu__list__items">
+            <a href="contact.html" class="nav__menu__list__items__link"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+        <!-- end desktop menu -->
+      </div>
+      <!-- end nav -->
+    </div>
+    <!-- end menu -->
+    <div class="wrapper">
+      <!-- header section -->
+      <section class="wrapper__header">
+        <!-- header text -->
+        <div class="wrapper__header__text">
+          <div class="wrapper__header__text__big_title">
+            NEXCO HIGHWAY SOLUTIONS OF AMERICA, INC.
+          </div>
+          <div class="wrapper__header__text__small_title">
+            A NEXCO-Central Group
+          </div>
+          <!-- <button class="header-text-button">KNOW MORE</button> -->
+        </div>
+        <!-- end header text -->
+      </section>
+      <!-- end section -->
+      <!-- services section -->
+      <section class="wrapper__services">
+        <!-- about us section -->
+        <div class="wrapper__services__about_us">
+          <!-- about us top -->
+          <div class="wrapper__services__about_us__top">
+            <h1 class="wrapper__services__about_us__top__heading">ABOUT US</h1>
+            <div class="wrapper__services__about_us__top__line"></div>
+          </div>
+          <!-- end top -->
+          <div class="wrapper__services__about_us__para">
+            <p class="wrapper__services__about_us__para__text">
+              NEXCO Highway Solutions of America, Inc. (NHSA) "a NEXCO-Central
+              Group" provides road operators and engineering companies with the
+              innovative road and traffic management solutions taking advantage
+              of highway business history over 60 years in Japan.
+            </p>
+            <a href="#" class="wrapper__services__about_us__para__know"
+              >Know More</a
+            >
+          </div>
+        </div>
+        <!-- end about us section -->
+        <!-- services and products section -->
+        <div class="wrapper__services__products">
+          <!-- heading -->
+          <div class="wrapper__services__products__heading">
+            <h1 class="wrapper__services__products__heading__top">
+              SERVICES & PRODUCTS
+            </h1>
+            <div class="wrapper__services__products__heading__top__line"></div>
+          </div>
+          <!-- end heading -->
+          <!-- box -->
+          <div class="wrapper__services__products__box">
+            <!-- box left -->
+            <div class="wrapper__services__products__box__l">
+              <div class="wrapper__services__products__box__l__para">
+                <p class="wrapper__services__products__box__l__para__text">
+                  Our engineering services, backed by decades of practical
+                  experience, help road operators and engineering companies that
+                  seek to manage their roadways effectively by reducing
+                  life-cycle costs and increasing performances.
+                </p>
+                <button
+                  class="wrapper__services__products__box__l__para__button"
+                >
+                  KNOW MORE
+                </button>
+              </div>
+            </div>
+            <!-- end box left -->
+            <!-- box right -->
+            <div class="wrapper__services__products__box__r">
+              <div class="wrapper__services__products__box__r__slideshow">
+                <div
+                  class="wrapper__services__products__box__r__slideshow__slides wrapper__services__products__box__r__slideshow__slides--fade"
+                >
+                  <div
+                    class="wrapper__services__products__box__r__slideshow__slides__shadow"
+                  ></div>
+                  <img
+                    src="images/home/service_1.jpg"
+                    class="wrapper__services__products__box__r__slideshow__slides__shadow__img"
+                  />
+                </div>
+                <div
+                  class="wrapper__services__products__box__r__slideshow__slides wrapper__services__products__box__r__slideshow__slides--fade"
+                >
+                  <div
+                    class="wrapper__services__products__box__r__slideshow__slides__shadow"
+                  ></div>
+                  <img
+                    src="images/home/service_1.jpg"
+                    class="wrapper__services__products__box__r__slideshow__slides__shadow__img"
+                  />
+                </div>
+                <div
+                  class="wrapper__services__products__box__r__slideshow__slides wrapper__services__products__box__r__slideshow__slides--fade"
+                >
+                  <div
+                    class="wrapper__services__products__box__r__slideshow__slides__shadow"
+                  ></div>
+                  <img
+                    src="images/home/service_1.jpg"
+                    class="wrapper__services__products__box__r__slideshow__slides__shadow__img"
+                  />
+                </div>
+              </div>
+              <div
+                class="wrapper__services__products__box__r__slideshow_dot_box"
+              >
+                <span
+                  class="wrapper__services__products__box__r__slideshow_dot_box__dot"
+                  onclick="currentSlide(1)"
+                ></span>
+                <span
+                  class="wrapper__services__products__box__r__slideshow_dot_box__dot"
+                  onclick="currentSlide(2)"
+                ></span>
+                <span
+                  class="wrapper__services__products__box__r__slideshow_dot_box__dot"
+                  onclick="currentSlide(3)"
+                ></span>
+              </div>
+            </div>
+            <!-- end box right -->
+          </div>
+          <!-- end box -->
+        </div>
+        <!-- end services and products section -->
+      </section>
+      <!-- end services section -->
+      <!-- news section -->
+      <section class="wrapper__news">
+        <!-- top heading -->
+        <div class="wrapper__news__title">
+          <div class="wrapper__news__title__top">News</div>
+          <div class="wrapper__news__title__line"></div>
+        </div>
+        <!-- end top heading -->
+        <!-- news description -->
+        <div class="wrapper__news__description">
+          <div class="wrapper__news__description__cards">
+            <div class="wrapper__news__description__cards__t">
+              JUNE 14, 2019
+            </div>
+            <div class="wrapper__news__description__cards__d">
+              We open a local office in Irving, TX (Jan 1, 2020).
+            </div>
+          </div>
+          <div class="wrapper__news__description__cards">
+            <div class="wrapper__news__description__cards__t">
+              APRIL 4, 2019
+            </div>
+            <div class="wrapper__news__description__cards__d">
+              Thank you for visiting our booth at IBTTA Annual Technology Summit
+              !
+            </div>
+          </div>
+        </div>
+        <div class="wrapper__news__description">
+          <div class="wrapper__news__description__cards">
+            <div class="wrapper__news__description__cards__t">
+              JANUARY 13, 2019
+            </div>
+            <div class="wrapper__news__description__cards__d">
+              We're going to run a booth at the TRB exhibition (Jan XX, 2020)
+            </div>
+          </div>
+          <div class="wrapper__news__description__cards">
+            <div class="wrapper__news__description__cards__t">JUNE 5, 2017</div>
+            <div class="wrapper__news__description__cards__d">
+              Conclusion of the strategic Partnership with FECON
+            </div>
+          </div>
+        </div>
+        <!-- end news description -->
+      </section>
+      <!-- end news section -->
+      <!-- get in touch section -->
+      <section class="wrapper__getintouch">
+        <!-- top heading -->
+        <div class="wrapper__getintouch__heading">
+          <div class="wrapper__getintouch__heading__top">get in touch</div>
+          <div class="wrapper__getintouch__line"></div>
+        </div>
+        <!-- end heading -->
+        <!-- get in touch content -->
+        <div class="wrapper__getintouch__para">
+          <div class="wrapper__getintouch__para__text">
+            You need more information? Check what other persons are saying about
+            our product. They are very happy with their purchase.
+          </div>
+          <div class="wrapper__getintouch__para__contact_us">
+            <div class="wrapper__getintouch__para__contact_us__address">
+              <div class="wrapper__getintouch__para__contact_us__address__icon">
+                <img src="images/home/address.png" />
+              </div>
+              <div class="wrapper__getintouch__para__contact_us__address__text">
+                Bld Mihail Kogalniceanu, nr. 8, 7652 <br />
+                Bucharest, USA
+              </div>
+            </div>
+            <div class="wrapper__getintouch__para__contact_us__address">
+              <div class="wrapper__getintouch__para__contact_us__address__icon">
+                <img src="images/home/mail.png" />
+              </div>
+              <div class="wrapper__getintouch__para__contact_us__address__text">
+                ask@cnexo.com
+              </div>
+            </div>
+            <div class="wrapper__getintouch__para__contact_us__address">
+              <div class="wrapper__getintouch__para__contact_us__address__icon">
+                <img src="images/home/call.png" />
+              </div>
+              <div class="wrapper__getintouch__para__contact_us__address__text">
+                Michael Jordan +40 762 321 762 <br />
+                Mon - Fri, 8:00-22:00
+              </div>
+            </div>
+          </div>
+          <button class="wrapper__getintouch__para__text_button">
+            CONTACT US
+          </button>
+        </div>
+        <!-- end content -->
+      </section>
+      <!-- end section -->
+    </div>
+    <!-- footer section -->
+    <section class="footer">
+      <img src="images/home/Services.png" class="footer__logo" />
+      <div class="footer__privacy_text"><span>Privacy Policy</span></div>
+      <div class="footer__copyright_text">
+        Copyright &copy; Central Nippon Expressway Company Limited All Rights
+        Reserved.
+      </div>
+      <!-- scroll button -->
+      <div class="footer__scroll_button" id="back2Top">
+        <img src="images/icons/top.png" />
+      </div>
+      <!-- end button -->
+    </section>
+    <!-- end section -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/slideshow.js"></script>
+  </body>
 </html>
