@@ -2,12 +2,12 @@
     .nav{
         position: fixed;
         .fa-times{
-            color:#e27f21;
+            color:$menu_icon;
             cursor: pointer;
 
         }
         .fa-ellipsis-h{
-            color:#e27f21;
+            color:$menu_icon;
             cursor: pointer;
         }
         &__menu{
@@ -17,14 +17,14 @@
                     display: none;
                     position: absolute;
                     z-index: 1 ;
-                    background: white;
+                    background: $menu-background;
                     top: 99%;
                     width: 100%;
                     text-align: right;
                     right: 0;
                     padding: 2% 5%;
                     &__active>a{
-                            color:#e27f21 !important;
+                            color:$menu_hover_text !important;
                         
                     }
                     &__items{
@@ -34,7 +34,7 @@
                             display: none;
                             margin: 10px 0;
                             &__heading{
-                              color:#000000;
+                              color:$primary-text-color;
                               font-family: Barlow-medium-bold;
                             }
                             &__sublist{
@@ -46,7 +46,7 @@
                                       }
                                  }
                                  &__active>a{
-                                    color: #e27f21;
+                                    color: $menu_hover_text;
                                 
                             }
                             }
@@ -60,7 +60,7 @@
                         a{  font-family: Barlow-medium-bold;
                             text-transform: uppercase;
                             text-decoration: none;
-                            color: #000000;
+                            color: $primary-text-color;
                             text-align: center;
                             overflow: hidden;
                             font-size: 16px;
@@ -70,7 +70,7 @@
                     
                 }
                 .fa-bars{
-                    color:#e27f21;
+                    color:$menu_icon;
                     cursor: pointer;
                     font-size:30px;
                 }
@@ -86,7 +86,8 @@
         background-size: cover;
       
         &__text{
-                padding:45% 0;
+              //  padding:45% 0;
+              margin-top: 273px;
             &__big_title{
                 font-size:42px;
             }
@@ -165,8 +166,7 @@
     }
     &__news{
         &__description{
-            display: flex;
-            flex-direction: column;
+            @include flexColumn;
             padding:0 2%;
             &__cards{
                 width: 100%;
@@ -198,15 +198,14 @@ color: $secondary-text-color;
     &__header{
         background-size: cover;
         &__text{
-            padding:38% 0;
+            margin-top:300px;
         &__big_title{
             font-size:42px;
         }
     }
     }
     &__middle_content{
-        display: flex;
-        flex-direction: column;
+        @include flexColumn;
         &__contact{
             width:100%;
         }
@@ -229,15 +228,12 @@ color: $secondary-text-color;
   
     &__pro_with_us{
         &__para{
-            display: flex;
-            flex-direction: column;
+            @include flexColumn;
             &__text{
-                width: 100%;
-                text-align: center;
+                @include proWithUs;
             }
             &__number_box{
-                width: 100%;
-                justify-content: center;
+                @include proWithUs;
                 &__button{
                     width: 50%;
                 }
@@ -250,23 +246,21 @@ color: $secondary-text-color;
     &__header{
         background-size: cover;
         &__text{
-            padding:38% 10%;
+            margin-top:38% ;
              &__big_title{
             font-size:42px;
         }
       }
     }
     &__team{
-        display: flex;
-        flex-direction: column;
+        @include flexColumn;
         background-size:auto;
         &__text{
             width:100%;
         }
         &__images{
             width:100%;
-            display: flex;
-        flex-direction: column;
+           @include flexColumn;
         padding-top:10%;
             &__body{
                 text-align: center;
@@ -320,8 +314,7 @@ color: $secondary-text-color;
                 top:unset;
                 width:100%;
                 margin-left:0;
-                display: flex;
-                flex-direction: column;
+                @include flexColumn;
                 &__body{
                     width:100%;                   
                 }
@@ -335,7 +328,7 @@ color: $secondary-text-color;
         //background-image:url(../images/services/services_bg.jpg);
         background-size: cover;
         &__text{
-            padding:38% 0;
+            margin-left:0;
             &__big_title{
                 width:100%;
                 margin:0;
@@ -358,8 +351,7 @@ color: $secondary-text-color;
                 }
             }
             &__images{
-                display: flex;
-                flex-direction: column;
+                @include flexColumn;
                 padding:0;
                 margin:0;
                 &__box{
@@ -383,8 +375,7 @@ color: $secondary-text-color;
                
             }
             &__box{
-                display: flex;
-                flex-direction: column;
+                @include flexColumn;
                 justify-content:space-between;
                 margin:2%;
                 padding:5%;
@@ -413,8 +404,7 @@ color: $secondary-text-color;
                             width: 40%;
                         }
                         &__t{
-                            display: flex;
-                            flex-direction: column;
+                            @include flexColumn;
                             justify-content: center;
                             &__cards{
                                 width:100%;
@@ -444,7 +434,7 @@ color: $secondary-text-color;
     margin-left:0;
 }
 .footer__scroll_button{
-    bottom:30%;
+    bottom:10%;
 }
 
 
@@ -493,6 +483,9 @@ color: $secondary-text-color;
     .wrapper{
         &__header{
             padding-bottom: 9%;
+            &__text{
+                margin-top: 330px;
+            }
         }
         &__services__products{
             margin-top: 46%;
@@ -571,8 +564,7 @@ color: $secondary-text-color;
             }
         }
         &__team{
-            display: flex;
-            flex-direction: column;
+            @include flexColumn;
             &__images{
                display: flex;
             }
@@ -602,51 +594,17 @@ color: $secondary-text-color;
          }
         &__box{
             &__image{
-                width:100%;
-                text-align: center;
+                @include servicesmimage;
             }
             
                 &__text{
-                 width:100%;
-                 text-align: center; 
+                    @include servicesmimage;
                 }
             
           }
     }
 }
-    .services2{
-        overflow: hidden;
-        .services1-content{
-            &-page{
-                &-wrapper{                   
-                .wrapper-images{
-                    .middle-img{
-                             margin:12% 36%;
-                           
-                      }
-                   
-                 }
-                 .wrapper-box{
-                   &-image{
-                       width:100%;
-                       text-align: center;
-                   }
-                   
-                       &-text{
-                        width:100%;
-                        text-align: center; 
-                       }
-                   
-                 }
-                }
-            }
-        }
-    }
-    .header-nav-dropdown-mobile{
-        top: 63%;
-        right: 103.5%;
-    }
-     
+ 
 }
 
 
@@ -789,11 +747,14 @@ color: $secondary-text-color;
     }
 }
 .contact_wrapper{
-    
+     &__header{
+         &__text{
+             margin-top:22%;
+         }
+     }
     &__team{
-        display: flex;
-        flex-direction: column;
-        background-size:auto;
+        @include flexColumn;
+        background-size:cover;
        
         &__images{
             display: flex;
@@ -825,36 +786,7 @@ color: $secondary-text-color;
         width: 29%;
     }
 }
-.services2{
-    overflow: hidden;
-    .services1-content{
-        &-page{
-            &-wrapper{
-             .wrapper-images{
-                 .middle-img{
-                    margin: 5% 42%;
-                 }
-             }
-             .wrapper-box{
-                 &-text,&-image{
-                     width: 100%;
-                 }
-                margin: 4% 9%;
-                padding: 1% 5%;
-                text-align:center;
-             }
-            }
-        }
-    }
-}
 
-.wrapper .services-products-box-r .slideshow-dot-box{
-    margin-top: 80px;
-}
-.header-nav-dropdown-mobile{
-    top: 63%;
-    right: 103.5%;
-}
 }
 
 @media screen and (min-width:1024px) and (max-width:1024px){

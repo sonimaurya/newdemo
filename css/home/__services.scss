@@ -1,6 +1,5 @@
 .wrapper{
-    display:flex;
-flex-direction: column;
+    @include flexColumn;
     &__services{
     background-image: url(../images/home/services_bg.jpg);
     background-size: 100% 100%;
@@ -9,9 +8,8 @@ flex-direction: column;
    // padding:5% ;
     &__about_us{
         border-radius: 10px;
-        display: flex;
         justify-content: center;
-        flex-direction: column;
+        @include flexColumn;
         padding-top:1%;
         padding-bottom:1%;
         background-color: $services-background-color;
@@ -47,7 +45,7 @@ flex-direction: column;
             &__know{
                 text-transform: uppercase;
                 font-size: 20px;
-                color: #e27f21;
+                color:$text-button-color;
                 font-family: Barlow-bold;
                 text-decoration: none;
                 line-height: 2;
@@ -71,7 +69,7 @@ flex-direction: column;
                 &__top{
                     text-transform: uppercase;
                     font-size: 40px;
-                    color: #ffffff;
+                    color: $secondary-text-color;
                     font-family: Barlow-semi-bold;
                 }
                 &__top__line{
@@ -80,8 +78,7 @@ flex-direction: column;
               
         }
         &__box{
-            display: flex;
-            justify-content:space-between;
+            @include flexBetween;
             padding:10px;
         //@include layout($direction:row,$justify:space-between,$padding:10px);
         &__l{
@@ -104,7 +101,7 @@ flex-direction: column;
             }
          &__text{
             font-size: 24px;
-            color: #ffffff;
+            color: $secondary-text-color;
             font-family: Barlow-regular;
         }
         }              

@@ -1,13 +1,12 @@
 .wrapper{
-    display:flex;
-    flex-direction: column;  
+    @include flexColumn; 
     &__getintouch{
         position: relative;
         background-image: url(../images/home/getintouch.jpg);
         background-size: 100% 100%;
         &__heading{
             padding-top: 30px;
-            text-align: center;
+            @include textCenter;
             &__top{
                 font-size:40px;
                 color:$text-button-color;
@@ -21,27 +20,26 @@
         }
        
         &__para{
-            text-align: center;
+            @include textCenter;
             &__text{
             font-size:18px;
-                color:#ffffff;
+                color:$secondary-text-color;
                 font-family:Barlow-regular;
             line-height: 2;
                       }
             width: 100%;
             //margin:0 20% 0 20%;
             &__contact_us{
-                display: flex;
-                justify-content:center;
+                @include flexCenter;
                 &__address{
                    padding:3% 5%;
                     &__icon{
                         padding:20px;
                     }
                     &__text{
-                        text-align: center;
+                        @include textCenter;
                         font-size:18px;
-                        color:#ffffff;
+                        color:$secondary-text-color;
                         font-family:Barlow-regular;
                         text-transform: uppercase;
                         line-height: 2;

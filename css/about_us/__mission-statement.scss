@@ -1,8 +1,7 @@
 .contact_wrapper{
     &__mission_statements{
-    display: flex;
+    @include flexBetween;
     flex-direction: column;
-    justify-content: space-between;
     background-color: $mission-statements-background;
     &__title{
         text-align: center;
@@ -19,8 +18,7 @@
         }
     }
     &__para{
-        display: flex;
-        justify-content: space-between;
+        @include flexBetween;
         padding:3% 4%;
         &__cards{
             width:33.33%;

@@ -1,18 +1,16 @@
 .wrapper_services__content__page{
         
         &__images{
-            display:flex;
-            justify-content: space-between;
+            @include flexBetween;
             padding:4% 9%;
         
             &__box{
                 width:40%;
                 &__text{
                     font-size:20px;
+                    @include services2Font;
                     font-family:barlow-regular ;
-                    color:$top-heading-color;
                      padding:5% 0; 
-                     text-align: center;
                      letter-spacing: 1.3px;;
                 }
                 &:first-child,&:last-child{
@@ -33,51 +31,33 @@
               
         }
         &__box{
-            display:flex;
-            justify-content:space-between;
+            @include flexCenter;
             margin:4% 9%;
-            justify-content: center;
             //padding: 1% 5%;
             padding:1% 0;
-            border:1px solid grey;
+            border:1px solid $services-box-border;
             border-radius: 8px;
             &__text{
-                width:50%;
+              width:50%;
               text-transform:capitalize;
               font-size:72px;
-              text-align: center;
               font-family:Barlow-bold;
-              color:$top-heading-color;
+              @include services2Font;
             }
             &__image{
                 width:50%;
-                display:flex;
+                @include flexCenter;
                 padding:2%;
-                justify-content: center;
                 &__l{  
-                    padding:8%;
-                    margin:5%;
-                    border:1px solid grey;
-                    border-radius: 8px;
+                    @include service2Lrbox;
                     &__text{
-                           font-family:Barlow-medium-bold;
-                           color:$top-heading-color;
-                           text-align: center;
-                           font-size:24px;
-                           text-transform: uppercase;
+                        @include servicesFont;
                     }
                 }
                 &__r{
-                    padding:8%;
-                    margin:5%;
-                    border:1px solid grey;
-                    border-radius: 8px;
+                   @include service2Lrbox;
                     &__text{
-                        font-family:Barlow-medium-bold;
-                        color:$top-heading-color;
-                        text-align: center;
-                        font-size:24px;
-                        text-transform: uppercase;
+                        @include servicesFont;
                     }
                 }
             }

@@ -1,7 +1,6 @@
 .contact_wrapper{
     &__solution_overview{
-    display:flex;
-    flex-direction:column;
+        @include flexColumn;
     &__title{
         text-align: center;
         padding:2%;
@@ -17,8 +16,7 @@
         }
     }
     &__chart_box{
-        display:flex;
-        flex-direction:column;
+       @include flexColumn;
         text-align: center;
         width: 90%;
         margin-left: 5%;
@@ -30,8 +28,7 @@
                 margin: 0 0 4% 0;
             }
         &__parent{
-            display:flex;
-            flex-direction:column;
+            @include flexColumn;
             position: relative;
             &__line{
                 display:flex;
@@ -63,8 +60,7 @@
             display: flex;
             &__body{
                 padding:2%;
-                display: flex;
-                flex-direction: column;
+                @include flexColumn;
                 width:33.33%;
                 &__card{
                      background-color:$text-button-color;

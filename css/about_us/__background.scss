@@ -1,8 +1,7 @@
 .contact_wrapper{
     &__background{
     margin-top:10%;
-    display: flex;
-    flex-direction: column;
+    @include flexColumn;
     justify-content:center;
     padding:8% 5%;;
     position: relative;
@@ -13,7 +12,7 @@
         &__top{
             text-transform: uppercase;
             font-size: 40px;
-            color:#ffffff;
+            color:$secondary-text-color;
             font-family:Barlow-semi-bold;
         }
         &__line{
@@ -27,44 +26,40 @@
         letter-spacing: 1.5px;
         line-height:1.5;
         font-size: 20px;
-        color:#ffffff;
+        color:$secondary-text-color;
         font-family:Barlow-regular;
     }
    }
    &__cards{
        padding:4% 0;
-       display: flex;
-       justify-content: center;
+       @include flexCenter;
        &__body{
            text-align: center;
-           display: flex;
+           @include flexColumn;
            justify-content: space-between;
-           flex-direction: column;
+           
            //padding:2% 5%;
            width: 33.3%;
            &__title{
               font-size: 20px;
-              color:#ffffff;
-              font-family:Barlow-semi-bold;
-              text-transform: uppercase;
+              color:$secondary-text-color;
+              @include aboutUsBackground;
            }
            &__desc{
               font-size: 34px;
               color:$about-us-background-text-color;
-              font-family:Barlow-semi-bold;
-              text-transform: uppercase;
+              @include aboutUsBackground;
         }
         &__footer{
             font-size: 20px;
-              color:#ffffff;
+              color:$secondary-text-color;
               font-family:Barlow-regular;
               text-transform: uppercase;
         }
        }
    }
    &__button{
-       display:flex;
-       flex-direction: column;
+       @include flexColumn;
        justify-content: center;
        &__btn{
         background:$text-button-color;
@@ -81,8 +76,6 @@
         font-size:16px;
        }
    }
-   &-scroll-button{
-       @include scroll-btn($top:92%);
-   }
+  
 }
 }

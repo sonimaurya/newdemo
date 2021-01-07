@@ -1,11 +1,25 @@
 
-@mixin text-property($text-transform:uppercase,$size:14px,$color:#ffffff,$font:initial) {
-   text-transform: $text-transform;
-  font-size: $size;
-  color:$color ;
-  font-family:$font;
+@mixin  flexBetween{
+   display:flex;
+   justify-content:space-between;
 }
 
+@mixin  flexCenter{
+   display:flex;
+   justify-content:center;
+}
+
+@mixin flexColumn{
+   display: flex;
+   flex-direction: column;
+}
+@mixin flexEnd{
+   display: flex;
+   justify-content:flex-end;
+}
+@mixin textCenter {
+   text-align: center;
+}
 @mixin headingLine($background:$text-button-color) {
    display: block;
    width: 45px;
@@ -13,6 +27,22 @@
    background: $background;
    margin: 20px auto;
    
+
+}
+
+@mixin servicesmimage{
+   width:100%;
+   text-align: center; 
+}
+
+@mixin proWithUs{
+   width:100%;
+   text-align: center; 
+}
+
+@mixin aboutUsBackground{
+   font-family:Barlow-semi-bold;
+   text-transform: uppercase;
 }
 
 @mixin textButton($width:16%,$height:58px,$background:$text-button-color) {
@@ -29,9 +59,27 @@
   
 }
 
+@mixin servicesFont
+{  
+   font-family:Barlow-medium-bold;
+   color:$top-heading-color;
+   text-align: center;
+   font-size:24px;
+   text-transform: uppercase;
+}
 
+@mixin service2Lrbox{
+   padding:8%;
+   margin:5%;
+   border:1px solid $services-box-border;
+   border-radius: 8px;
+}
 
-
+@mixin services2Font{
+  
+   color:$top-heading-color;
+   text-align: center;
+}
 
 @mixin slideshoe_dot {
    background-color: $text-button-color;
@@ -40,7 +88,13 @@
 }
 
 
-
+@mixin solutionOverview{
+   border-top:5px solid $text-button-color;
+   border-left:5px solid $text-button-color;
+   height: 100px;
+   width:50%;
+   margin-left:15%;
+}
 
 @mixin scroll-btn($top:89%,$right:4%) {
       position: absolute;

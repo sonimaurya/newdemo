@@ -1,16 +1,13 @@
 .wrapper_contactus__header{
     background-image: url(../images/contact-us/contactus_bg.jpg);
-    display:flex;
-    flex-direction: column;
+    @include flexColumn;
     background-size: 100% 100%;
-    padding-bottom:9%;
-    padding-left:5%;
-    padding-right:5%;
+    padding:0 5%;
+    height:700px;
     &__text{
         text-align: center;
-        display: flex;
-        flex-direction: column;
-        padding:19% 0;
+        @include flexColumn;
+        margin-top:25%;
         &__big_title{
             padding: 10px 0;
             text-transform: uppercase;

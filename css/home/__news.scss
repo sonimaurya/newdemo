@@ -1,18 +1,16 @@
 .wrapper{
-    display:flex;
-    flex-direction: column;
+    @include flexColumn;
     &__news{
     padding:0 3%;
     padding-bottom: 3%;
-    display: flex;
-    flex-direction: column;
+    @include flexColumn;
     &__title{
-        text-align: center;
+        @include textCenter;
         padding:2%;
         &__top{
             text-transform: uppercase;
             font-size: 40px;
-            color: #474747;
+            color: $top-heading-color;
             font-family: Barlow-semi-bold;
 
 
@@ -22,29 +20,26 @@
         }
     } 
     &__description{
-        display: flex;
-        justify-content: space-between;
+       @include flexBetween;
         padding:0 10%;
         &__cards{
             &:hover{
-                background-color:#fcf2e8;
+                background-color:$news-hover-box;
                 cursor: pointer;
             }
             //@include layout($direction:column,$justify:space-between);
             width: 50%;
-            padding: 6% 11%;
+            padding: 6% 6%;
             text-align:center;
             &__t{
-                text-transform: none;
                 font-size: 35px;
-                color: #aaaaaa;
+                color: $news_heading_color;
                 font-family: Barlow-semi-bold;
                 padding-bottom: 3%;
             }
             &__d{
-                text-transform: none;
                 font-size: 20px;
-                color: #6b6b6b;
+                color:$news_description_color;
                 font-family: Barlow-medium-bold;
                 letter-spacing: 1px;
                 line-height: 32px;
@@ -56,16 +51,16 @@
 
 .wrapper__news>.wrapper__news__description:nth-last-child(2){
     .wrapper__news__description__cards:first-child{
-        border-right:2px solid $about-us-border-color;  
+        border-right:2px solid $news-border-color;  
     }
   }
   .wrapper__news>.wrapper__news__description:last-child{
   .wrapper__news__description__cards:first-child{
-      border-right:2px solid $about-us-border-color;
-      border-top:2px solid $about-us-border-color;
+      border-right:2px solid $news-border-color;
+      border-top:2px solid $news-border-color;
   }
   .wrapper__news__description__cards:last-child{
-    border-top:2px solid $about-us-border-color;
+    border-top:2px solid $news-border-color;
    
 }
 }

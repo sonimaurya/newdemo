@@ -1,7 +1,6 @@
 .wrapper_services__content__page{
     &__services3_images{
-        display: flex;
-    flex-direction: column;
+        @include flexColumn;
     img{
         width: 90%;
         margin-left: 5%;

@@ -2,19 +2,12 @@
 .contact_wrapper__header{
         background-image: url(../images/about-us/aboutus_bg.jpg);
         background-size: 100% 100%;
-        padding-bottom:0;
-        display:flex;
-        flex-direction: column;
-        padding-left:5%;
-        padding-right:5%;
+        @include flexColumn;
+        height: 700px;
         &__text{
             text-align: center;
-            display: flex;
-            flex-direction: column;
-            padding-bottom:12%;
-            padding-top:8%;
-            padding-left:10%;
-            padding-right:10%;
+            @include flexColumn;
+            margin-top: 72px;
             letter-spacing: 2px;
             &__big_title{
                 text-transform: uppercase;
@@ -27,6 +20,7 @@
                 font-size: 20px;
                 color: #ffffff;
                 font-family:Barlow-regular;
+                padding:0 10%;
             }
             &__middle_title{
                 font-size: 24px;

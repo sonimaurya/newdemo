@@ -2,24 +2,23 @@
     .footer{
     padding:40px;
     font-family: Barlow-semi-bold;
-    flex-direction:column;
+    @include flexColumn;
     justify-content:center;
-    display: flex;
     &__logo{
         object-fit: contain;
     }
     &__privacy_text{
-        text-align: center;
+        @include textCenter;
         padding:30px;
         span{
             padding:0 40px 0 40px;
-            border-left: 1px solid $primary-text-color;
-            border-right: 1px solid $primary-text-color;
+            border-left: 1px solid $footer-border-color;
+            border-right: 1px solid $footer-border-color;
             white-space: nowrap;
         }
     }
     &__copyright_text{
-        text-align: center;
+       @include textCenter;
     }
     &__scroll_button{
         display: none;

@@ -1,34 +1,26 @@
 .nav{       
-    display:flex;
-    justify-content:space-between;
+    @include flexBetween;
     background-color: #ffffff;
     position: fixed;
     z-index:1;
     width:100%;
     padding-left:5%;
     padding-right:5%;
-    &__logo{
-        img{
-            width: 80%;
-        }
-    }
+    box-shadow: 1px 2px 3px 2px #02020212;
+  
     &__menu{
         &__mobile_menu{
             display: none;
         }
         display: flex;
-        justify-content:flex-end;
-        padding:2% 0;
         align-items: center;
         &__list{
             list-style-type: none;
             display: flex;
-            justify-content:flex-end;
             &__items{
                 &__dropdown{
                     display: none;
                     position: absolute;
-                    
                     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
                     z-index: 1;
                     top: 110%;
@@ -64,7 +56,7 @@
                     }
                 }
                 display: flex;
-                margin:10px;
+                margin-left:20px;
                 &__link{
                     font-size:18px;
                     color:$menu-text-color;
@@ -87,33 +79,34 @@
     }
 }
 .wrapper__header{
-    display:flex;
-    flex-direction: column;
+    @include flexColumn;
     background-image: url(../images/home/banner.jpg);
     background-size: 100% 100%;
-    padding-bottom:9%;
-    padding-left:5%;
-    padding-right:5%;
-   
+    // padding-bottom:9%;
+    // padding-left:5%;
+    // padding-right:5%;
+     height:700px;
+  
   
     &__text{
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        //justify-content: center;
-        padding-top:25%;
-        padding-bottom:12%;
+        @include textCenter;
+        @include flexColumn;
+        justify-content: center;
+        padding:0 5%;
+        // padding-top:25%;
+        // padding-bottom:12%;
+        margin-top:330px;
        &__big_title{
         padding: 10px 0;
         text-transform: uppercase;
         font-size: 72px;
-        color: #ffffff;
+        color:$secondary-text-color;
         font-family: Barlow-semi-bold;
     }
        &__small_title{
         text-transform: uppercase;
         font-size: 20px;
-        color: #ffffff;
+        color: $secondary-text-color;
         font-family: Barlow-medium-bold;
        }
       
